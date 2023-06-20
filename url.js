@@ -1,0 +1,1 @@
+export const baseUrl = `https://smart-intro-server.onrender.com`
