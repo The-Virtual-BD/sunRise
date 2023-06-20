@@ -13,7 +13,7 @@ const Team = () => {
                 </span>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-10 mt-14 mb-20  max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-2 lg:gap-5 mt-14 mb-20  max-w-7xl mx-auto">
                 {teamMember.map((team) => (
                     <MemberCard key={team.id} team={team} />
                 ))}
