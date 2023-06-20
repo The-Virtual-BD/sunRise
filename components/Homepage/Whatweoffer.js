@@ -23,7 +23,7 @@ const Whatweoffer = () => {
 
                 <div className="w-full lg:w-1/2">
                     <Image
-                        src={"/assets/loghtpaper.jpg"}
+                        src={"/images/loghtpaper.jpg"}
                         alt="lightpaper"
                         width={640}
                         height={400}
