@@ -181,7 +181,7 @@ export const teamMember = [
 		id: 4,
 		name: "Ms. Tanya Bain",
 		designation: "Director of Technology and Development",
-		img: "./images/team-3.jpg",
+		img: "/images/team-3.jpg",
 		linkedIn: "#",
 		github: "#",
 	},
