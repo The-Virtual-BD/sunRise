@@ -154,53 +154,38 @@ export const blogs = [
 
 export const teamMember = [
 	{
-		id: 1,
-		name: "Md. Mehedi Hasan",
-		designation: "CEO",
-		img: "/assets/team/mehedi_hasan_CEO.jpg",
-		linkedIn: "#",
-		github: "#",
-	},
-	{
 		id: 2,
-		name: "Jarif Huda Angon",
-		designation: "CTO",
+		name: "Mr. Ronnie Ferguson",
+		designation: "Chief Executive Officer (CEO) & Public Relations Director",
 		img: "/assets/team/Jarif-Huda-Angon.png",
 		linkedIn: "#",
 		github: "#",
 	},
 	{
 		id: 3,
-		name: "Asaf Ud Dulla",
-		designation: "CMO",
+		name: "Ms. Maronet Ferguson, CPA",
+		designation: "Chief Financial Officer (CFO) & Director of Sales",
 		img: "/assets/team/asaf-kakon.jpg",
 		linkedIn: "#",
 		github: "#",
 	},
-	/* {
-		id: 4,
+	{
+		id: 1,
 		name: "Md. Mehedi Hasan",
-		designation: "CEO",
+		designation: "Software Engineer and Artificial Intelligence Researcher",
 		img: "/assets/team/mehedi_hasan_CEO.jpg",
 		linkedIn: "#",
 		github: "#",
 	},
 	{
-		id: 5,
-		name: "Jarif Huda Angon",
-		designation: "CTO",
-		img: "/assets/team/Jarif-Huda-Angon.png",
+		id: 4,
+		name: "Ms. Tanya Bain",
+		designation: "Director of Technology and Development",
+		img: "/assets/team/mehedi_hasan_CEO.jpg",
 		linkedIn: "#",
 		github: "#",
 	},
-	{
-		id: 6,
-		name: "Asaf Ud Dulla",
-		designation: "CMO",
-		img: "/assets/team/asaf-kakon.jpg",
-		linkedIn: "#",
-		github: "#",
-	}, */
+
 ];
 
 
