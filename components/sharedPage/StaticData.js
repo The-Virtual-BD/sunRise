@@ -152,6 +152,57 @@ export const blogs = [
 	},
 ];
 
+export const teamMember = [
+	{
+		id: 1,
+		name: "Md. Mehedi Hasan",
+		designation: "CEO",
+		img: "/assets/team/mehedi_hasan_CEO.jpg",
+		linkedIn: "#",
+		github: "#",
+	},
+	{
+		id: 2,
+		name: "Jarif Huda Angon",
+		designation: "CTO",
+		img: "/assets/team/Jarif-Huda-Angon.png",
+		linkedIn: "#",
+		github: "#",
+	},
+	{
+		id: 3,
+		name: "Asaf Ud Dulla",
+		designation: "CMO",
+		img: "/assets/team/asaf-kakon.jpg",
+		linkedIn: "#",
+		github: "#",
+	},
+	/* {
+		id: 4,
+		name: "Md. Mehedi Hasan",
+		designation: "CEO",
+		img: "/assets/team/mehedi_hasan_CEO.jpg",
+		linkedIn: "#",
+		github: "#",
+	},
+	{
+		id: 5,
+		name: "Jarif Huda Angon",
+		designation: "CTO",
+		img: "/assets/team/Jarif-Huda-Angon.png",
+		linkedIn: "#",
+		github: "#",
+	},
+	{
+		id: 6,
+		name: "Asaf Ud Dulla",
+		designation: "CMO",
+		img: "/assets/team/asaf-kakon.jpg",
+		linkedIn: "#",
+		github: "#",
+	}, */
+];
+
 
 
 
@@ -346,53 +397,4 @@ export const productsData = [
 	},
 ];
 
-export const teamMember = [
-	{
-		id: 1,
-		name: "Md. Mehedi Hasan",
-		designation: "CEO",
-		img: "/assets/team/mehedi_hasan_CEO.jpg",
-		linkedIn: "#",
-		github: "#",
-	},
-	{
-		id: 2,
-		name: "Jarif Huda Angon",
-		designation: "CTO",
-		img: "/assets/team/Jarif-Huda-Angon.png",
-		linkedIn: "#",
-		github: "#",
-	},
-	{
-		id: 3,
-		name: "Asaf Ud Dulla",
-		designation: "CMO",
-		img: "/assets/team/asaf-kakon.jpg",
-		linkedIn: "#",
-		github: "#",
-	},
-	/* {
-		id: 4,
-		name: "Md. Mehedi Hasan",
-		designation: "CEO",
-		img: "/assets/team/mehedi_hasan_CEO.jpg",
-		linkedIn: "#",
-		github: "#",
-	},
-	{
-		id: 5,
-		name: "Jarif Huda Angon",
-		designation: "CTO",
-		img: "/assets/team/Jarif-Huda-Angon.png",
-		linkedIn: "#",
-		github: "#",
-	},
-	{
-		id: 6,
-		name: "Asaf Ud Dulla",
-		designation: "CMO",
-		img: "/assets/team/asaf-kakon.jpg",
-		linkedIn: "#",
-		github: "#",
-	}, */
-];
+

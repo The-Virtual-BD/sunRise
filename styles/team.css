@@ -82,9 +82,9 @@
 	color: #00b2e2;
 }
 
-.team_card:hover .team_info {
+/* .team_card:hover .team_info {
 	height: 100px;
-}
+} */
 
 .team_card:hover .team_social {
 	transform: translateY(-20px);

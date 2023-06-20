@@ -9,6 +9,7 @@ import StrategicServices from "../components/Homepage/StrategicServices";
 import Implementation from "../components/Homepage/Implementation";
 import Form from "../components/Homepage/Form";
 import Blogs from "../components/Homepage/Blogs";
+import Team from "../components/Homepage/Team";
 
 export default function Home() {
 	return (
@@ -24,6 +25,7 @@ export default function Home() {
 				<Whatweoffer />
 				<StrategicServices />
 				<Implementation />
+				<Team />
 				<Form />
 				<Faqs />
 				<Blogs />
