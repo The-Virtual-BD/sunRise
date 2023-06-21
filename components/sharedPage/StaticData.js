@@ -58,12 +58,12 @@ export const ourAchivment = [
 	},
 	{
 		id: 3,
-		title: "208M",
-		subTitle: "IoT devices",
-		subTitle2: "connected"
+		title: "13+",
+		subTitle: "Total developed",
+		subTitle2: "software"
 
 	},
-	{
+	/* {
 		id: 4,
 		title: "100s",
 		subTitle: "IT strategies ",
@@ -83,7 +83,7 @@ export const ourAchivment = [
 		subTitle: "Fortune 500 ",
 		subTitle2: "enterprises served",
 
-	},
+	}, */
 ];
 
 export const implementeServices = [
@@ -187,6 +187,45 @@ export const teamMember = [
 	},
 
 ];
+
+export const BenifitsData = [
+	{
+		id: 1,
+		title: "Western mentality",
+		desc: "We are hardworking, passionate, and straightforward people—our mentality and cultural values closely match those in the West.",
+		img: "/images/why-us/bg-card-01.jpg"
+	},
+	{
+		id: 2,
+		title: "Technical strength",
+		desc: "Our engineers are known for their high technical competency level. Many have started learning programming early in their life.",
+		img: "/images/why-us/bg-card-02.jpg"
+	},
+	{
+		id: 3,
+		title: "Experienced leadership",
+		desc: "Our teams are led by technical staff with a strong programming background, where many started practicing the craft from a young age.",
+		img: "/images/why-us/bg-card-03.jpg"
+	},
+	{
+		id: 4,
+		title: "Robust education",
+		desc: "Besides years of hands-on experience, our staff received high-quality IT education through cutting-edge faciliies for learning software engineering, quality assurance, and data-science.",
+		img: "/images/why-us/bg-card-04.jpg"
+	},
+	{
+		id: 5,
+		title: "Time zone advantage",
+		desc: "We use the time difference to our advantage. With overlap of 4-5 hours each day with our clients in the US, we use our meetings to drive efficient communication and do heads-down work.",
+		img: "/images/why-us/bg-card-05.jpg"
+	},
+	{
+		id: 6,
+		title: "Cost effective",
+		desc: "Doing things right and efficiently matters. While price is the amount you pay per week for the development team, cost is your total cost of ownership (TCO). We have one of the lowest TCOs in the industry.",
+		img: "/images/why-us/bg-card-06.jpg"
+	},
+]
 
 
 

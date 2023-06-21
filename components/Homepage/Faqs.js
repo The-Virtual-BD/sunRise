@@ -2,17 +2,17 @@ import React from 'react';
 
 const Faqs = () => {
     return (
-        <section className=' bg-lightBg text-darkBg  px-5'>
+        <section className=' bg-[#F0F3F6] text-darkBg  px-5'>
             <div className='w-full lg:max-w-7xl mx-auto  py-10'>
-                <h2 className='text-3xl lg:text-6xl text-center font-bold text-darkBg font-family mb-2'>Have Any Questions?</h2>
-                <p className="mb-10  text-center text-base lg:text-lg">Get a quick tour at our FAQs. If you have more questions, text us. We will get to you as soon as possible</p>
+                {/* <h2 className='text-3xl lg:text-6xl text-center font-bold text-darkBg font-family mb-2'>Have Any Questions?</h2>
+                <p className="mb-10  text-center text-base lg:text-lg">Get a quick tour at our FAQs. If you have more questions, text us. We will get to you as soon as possible</p> */}
 
                 <div className='flex flex-col lg:flex-row items-center justify-between gap-5 text-darkBg'>
                     <div className='w-full text-sm lg:text-base'>
 
                         <div className="collapse collapse-arrow bg-white mb-3">
                             <input type="checkbox" name="my-accordion-2" />
-                            <div className="collapse-title text-xl font-medium">
+                            <div className="collapse-title font-medium">
                                 Where are you located?
                             </div>
                             <div className="collapse-content">
@@ -22,7 +22,7 @@ const Faqs = () => {
 
                         <div className="collapse collapse-arrow bg-white mb-3">
                             <input type="checkbox" name="my-accordion-2" />
-                            <div className="collapse-title text-xl font-medium">
+                            <div className="collapse-title font-medium">
                                 How can I order ?
                             </div>
                             <div className="collapse-content">
@@ -36,7 +36,7 @@ const Faqs = () => {
 
                         <div className="collapse collapse-arrow bg-white mb-3">
                             <input type="checkbox" name="my-accordion-2" />
-                            <div className="collapse-title text-xl font-medium">
+                            <div className="collapse-title  font-medium">
                                 Can I make a visit to Fancy Hobbyist farm?
                             </div>
                             <div className="collapse-content">

@@ -64,7 +64,7 @@ const Header = () => {
 					</Link>
 
 					<nav class="stroke ml-5">
-						<ul className="hidden  lg:flex lg:flex-row justify-between items-center gap-2 text-lg ">
+						<ul className="hidden  lg:flex lg:flex-row justify-between items-center gap-2 text-xl ">
 							{memuItems.map((item, index) => (
 								<li key={index}>
 									<Link
