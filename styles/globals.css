@@ -213,6 +213,59 @@ nav.stroke ul li a:hover:after {
 }
 
 
+.ikigai-container {
+	position: relative;
+	margin: 0 20px 0 50px;
+	padding: 35px 40px 35px 72px;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 36px;
+	color: #444f5c;
+	z-index: 1;
+	text-align: center;
+}
+
+.ikigai-text::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 20px;
+	bottom: 0;
+	z-index: -1;
+	background: #fff;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
+	transform-origin: top left;
+	transform: skewX(25deg);
+}
+
+
+
+
+
+
+/*-------------------------
+		Solutions Page
+------------------------- */
+/* 
+.solution-card {
+	background: #fff;
+	border-top: 8px solid #1bb55c;
+	color: #1f2937;
+	transition: 0.5s all ease;
+}
+
+.solution-card:hover {
+	background: #374151;
+	border-top: 8px solid #1bb55c;
+	color: #fff;
+} */
+
+
+
+
+
+
 
 
 
@@ -259,6 +312,7 @@ nav.stroke ul li a:hover:after {
 .swiper-pagination-bullet {
 	background: #FFC23B !important;
 }
+
 
 
 
@@ -394,32 +448,34 @@ nav.stroke ul li a:hover:after {
 	}
 }
 
-/*-------------------------
-		Solutions Page
-------------------------- */
-
-.solution-card {
-	background: #fff;
-	border-top: 8px solid #1bb55c;
-	color: #1f2937;
-	transition: 0.5s all ease;
-}
-
-.solution-card:hover {
-	background: #374151;
-	border-top: 8px solid #1bb55c;
-	color: #fff;
-}
-
-
-
 @media screen and (max-width:565px) {
 	.header-design {
 		font-size: 20px;
 		padding: 12px 26px 15px 40px;
 	}
+
 	.why-header-design {
-		font-size: 35px;
+		font-size: 25px;
 		padding: 12px 26px 15px 40px;
 	}
+
+
+	.ikigai-container {
+		margin: 10px 15px 0 20px;
+		padding: 20px 25px 20px 25px;
+		line-height: 20px;
+		font-size: 12px;
+	}
+
+	.ikigai-text::before{
+		right: 65px;
+	}
+	.title {
+		font-size: 20px;
+		font-weight: 600;
+	}
+	.copy {
+		font-size: 14px;
+	}
+	
 }
