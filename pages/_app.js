@@ -7,6 +7,8 @@ import { ToastContainer } from "react-toastify";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Head from "next/head";
+import CrispChat from "../components/sharedPage/CrispChat"
 
 function MyApp({ Component, pageProps }) {
 	useEffect(() => {
@@ -14,12 +16,17 @@ function MyApp({ Component, pageProps }) {
 	}, []);
 
 	return (
-		<div>
-			<Header />
-			<Component {...pageProps} />
-			<ToastContainer />
-			<Footer />
-		</div>
+		<>
+
+			<div>
+				<CrispChat />
+				<Header />
+				<Component {...pageProps} />
+				<ToastContainer />
+				<Footer />
+			</div>
+		</>
+
 	);
 }
 
