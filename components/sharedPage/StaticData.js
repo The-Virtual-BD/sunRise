@@ -225,7 +225,29 @@ export const BenifitsData = [
 		desc: "Doing things right and efficiently matters. While price is the amount you pay per week for the development team, cost is your total cost of ownership (TCO). We have one of the lowest TCOs in the industry.",
 		img: "/images/why-us/bg-card-06.jpg"
 	},
-]
+];
+
+
+export const serviceStragty = [
+	{
+		id: 1,
+		name: 'Analyze',
+		details: "We examine your work processes and technology choices, identifying problems and bottlenecks.",
+		icon: "/images/services/icon-workflow-analyze.svg"
+	},
+	{
+		id: 2,
+		name: 'Plan',
+		details: "We create an actionable plan to help you resolve issues and re-architect where needed.",
+		icon: "/images/services/icon-workflow-plan.svg"
+	},
+	{
+		id: 3,
+		name: 'Transform',
+		details: "Our software engineers implement the necessary changes and initiatives.",
+		icon: "/images/services/icon-workflow-transform.svg"
+	},
+];
 
 
 

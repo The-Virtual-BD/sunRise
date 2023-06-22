@@ -1,0 +1,28 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M55 1V45" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M9 1V45" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M6 45H58C60.8 45 63 42.8 63 40V6C63 3.2 60.8 1 58 1H6C3.2 1 1 3.2 1 6V40C1 42.8 3.2 45 6 45Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M59 21V25" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M5 18V28" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M63 55H5L2 52L5 49H63V55Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M2 52H0" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M55 49V55" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M9 49V55" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M25 49V55" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M12 52H14" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M16 52H18" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M20 52H22" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M22 11L18 15L15 12" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M26 11H34" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M26 15H42" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M22 21L18 25L15 22" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M26 21H50" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M26 25H32" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M26 31H40" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M42 31H50" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M26 35H50" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M22 31L18 35L15 32" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M34 25H36" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M38 25H46" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M36 11H50" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+</svg>

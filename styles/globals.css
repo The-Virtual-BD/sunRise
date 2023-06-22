@@ -107,6 +107,8 @@ nav.stroke ul li a:hover:after {
 }
 
 .brand-image {
+	height: 60px;
+	width: 110px;
 	filter: grayscale(100%);
 	transition: filter 0.1s ease;
 }
@@ -114,6 +116,14 @@ nav.stroke ul li a:hover:after {
 .brand-image:hover {
 	filter: grayscale(0%);
 }
+
+.collapse{
+	border-radius: 5px !important;
+	
+}
+/* .collapse-title{
+	padding:15px !important;
+} */
 
 
 .blog-title {

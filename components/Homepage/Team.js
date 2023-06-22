@@ -44,7 +44,7 @@ const MemberCard = ({ team }) => {
 
                 <div className="team_info">
                     <h2 className="font-semibold">{name}</h2>
-                    <p className="italic">{designation}</p>
+                    <p className="text-sm lg:text-base">{designation}</p>
 
                     {/* <div className="team_social">
 						<div className="flex items-center gap-3 justify-center">

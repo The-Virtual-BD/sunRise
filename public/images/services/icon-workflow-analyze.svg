@@ -1,0 +1,16 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32 4V60" stroke="#466E94" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M4 32H60" stroke="#466E94" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M25 9L16 18L13 15" stroke="#466E94" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M23 17V23H9V9H18" stroke="#466E94" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M58 9L49 18L46 15" stroke="#466E94" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M56 17V23H42V9H51" stroke="#466E94" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M23 41H9V55H23V41Z" stroke="#466E94" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M56 41H42V55H56V41Z" stroke="#466E94" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M7 57L25 39" stroke="#466E94" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M7 39L25 57" stroke="#466E94" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M64 32H62" stroke="#466E94" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0 32H2" stroke="#466E94" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M32 2V0" stroke="#466E94" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M32 62V64" stroke="#466E94" stroke-width="2" stroke-miterlimit="10"/>
+</svg>

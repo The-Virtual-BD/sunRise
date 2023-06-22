@@ -81,7 +81,7 @@ const Header = () => {
 						</ul>
 					</nav>
 
-					<button className="bg-primary  rounded-sm text-darkBg px-5 lg:px-10 py-2 lg:py-3 font-bold text-xl lg:text-2xl ">Get in touch</button>
+					<button className="bg-primary  rounded-sm text-darkBg px-5 lg:px-6 py-1.5 lg:py-2 font-bold text-lg lg:text-xl ">Get in touch</button>
 				</header>
 
 				{open ? (
