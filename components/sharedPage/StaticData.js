@@ -250,6 +250,52 @@ export const serviceStragty = [
 ];
 
 
+export const approachData = [
+	{
+		id: 1,
+		title: "Strategic advisory",
+		margin: "ml-0 lg:ml-0",
+		descHead1: "Business and IT needs assessment",
+		descContent1: "Analysis of the current business & IT goals and objectives.",
+		descHead2: "In-house vs outsourced analysis",
+		descContent2: "Cost-benefit analysis to decide which IT tasks and functions should be outsourced.",
+		icon: "/images/services/icon-white-approach-strategic-advisory.svg"
+	},
+	{
+		id: 2,
+		title: "Technical definition",
+		margin: "ml-2 lg:ml-10",
+		descHead1: "Enterprise architecture",
+		descContent1: "Detailed definition of the infrastructure, systems, and components needed to satisfy all business and technical requirements.",
+		descHead2: "Build vs buy (COTS)",
+		descContent2: "In-depth analysis of the tradeoffs for building each part of the system in-house vs leveraging commercial off-the-shelf (COTS) software, including upfront and ongoing costs with a total and projected ROI.",
+		icon: "/images/services/icon-white-approach-technical-definition.svg"
+	},
+	{
+		id: 3,
+		title: "Optimized operations",
+		margin: "ml-4 lg:ml-20",
+		descHead1: "Software development processes",
+		descContent1: "Assessment of the current software development processes and their efficiency. Optimization of the same processes to streamline delivery with current development capacity.",
+		descHead2: "Software delivery & DevOps",
+		descContent2: "Definition and implementation of effective DevOps processes, taking into account how existing teams work and the current bottlenecks.",
+		icon: "/images/services/icon-white-approach-optimized-operations.svg"
+	},
+	{
+		id: 4,
+		title: "Implementation plan",
+		margin: "ml-6 lg:ml-32",
+		descHead1: "Rollout & deployment",
+		descContent1: "Detailed technical plan for the deployment of complex, distributed systems and the runbooks associated with operating them.",
+		descHead2: "Software development & testing",
+		descContent2: "In-depth plan for the development and testing of key features, broken down by milestones and key business objectives achieved in each phase.",
+		descHead3: "Training & support plan",
+		descContent3: "Creation of a thorough plan for how to train both IT personnel and business stakeholders on the operation, use, and maintenance of the created software systems.",
+		icon: "/images/services/icon-white-approach-implementation-plan.svg"
+	},
+]
+
+
 
 
 

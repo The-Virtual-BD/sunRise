@@ -17,6 +17,7 @@ module.exports = {
 				card: "#F3F4F6",
 				greenclr: "#1BB55C",
 				formclr: "#F1F4F7",
+				darkgreen: "#42807A",
 				
 				
 			},
