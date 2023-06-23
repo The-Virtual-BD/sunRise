@@ -49,7 +49,7 @@ const ServicesDetails = () => {
 
 
                 <div className='why-work-process'>
-                    <div className='my-10 max-w-7xl mx-auto'>
+                    <div className='my-10 max-w-7xl mx-auto px-5 lg:px-0'>
                         <h2 className='text-2xl lg:text-4xl font-bold '>A consultative approach</h2>
                         <p className='text-sm lg:text-base max-w-3xl my-7'>Partnering with your organization for success, we follow the below methodology to plan, optimize, and execute upon a technical roadmap to solve your business objectives.</p>
 
@@ -63,22 +63,22 @@ const ServicesDetails = () => {
 
 
                                     <div className='w-5/6 p-7 text-darkBg'>
-                                        <h2 className='text-3xl font-bold mb-4'>{appData.title}</h2>
+                                        <h2 className='text-2xl lg:text-3xl font-bold mb-4'>{appData.title}</h2>
 
                                         <div className='my-3 border-l-2 border-l-greenclr px-4'>
                                             <h3 className='text-lg font-bold'>{appData.descHead1}</h3>
-                                            <p className='text-base '>{appData.descContent1}</p>
+                                            <p className='text-sm lg:text-base '>{appData.descContent1}</p>
                                         </div>
 
                                         <div className='my-3 border-l-2 border-l-greenclr px-4'>
                                             <h3 className='text-lg font-bold'>{appData.descHead2}</h3>
-                                            <p className='text-base '>{appData.descContent2}</p>
+                                            <p className='text-sm lg:text-base '>{appData.descContent2}</p>
                                         </div>
 
                                         {
                                             appData.descHead3 && <div className='my-3 border-l-2 border-l-greenclr px-4'>
                                                 <h3 className='text-lg font-bold'>{appData.descHead3}</h3>
-                                                <p className='text-base '>{appData.descContent3}</p>
+                                                <p className='text-sm lg:text-base '>{appData.descContent3}</p>
                                             </div>
                                         }
 

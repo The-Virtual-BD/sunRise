@@ -293,6 +293,45 @@ export const approachData = [
 		descContent3: "Creation of a thorough plan for how to train both IT personnel and business stakeholders on the operation, use, and maintenance of the created software systems.",
 		icon: "/images/services/icon-white-approach-implementation-plan.svg"
 	},
+];
+
+export const feedbacksData = [
+	{
+		id: 1,
+		name: "Hardeep Walia",
+		designation: "CEO",
+		company: "Motif Investing",
+		companyLogo: "/images/Brand/moth.jpg",
+		comment: "SiliconMint delivered core parts of our real-time trading platform, including a big data system that analyzes over a million stock market messages per second. I would highly recommend SiliconMint for their dedication and passion for doing things right the first time around.",
+		img: "/images/services/review/img-photo-Leon-Hounshell.jpg"
+	},
+	{
+		id: 2,
+		name: "Aaron Nathan",
+		designation: "CEO",
+		company: "Point One Navigation",
+		companyLogo: "/images/Brand/logo-point-one.png",
+		comment: "SiliconMint helped us make the impossible possible—writing a computer vision system that identifies geometry in 3D space from a single video camera feed. I was astounded by their technical knowledge and how it's coupled with an unbridled passion for moving quickly, yet with precision.",
+		img: "/images/services/review/img-photo-Aaron-Nathan.jpg"
+	},
+	{
+		id: 3,
+		name: "Naohisa Takahashi",
+		designation: "Manager, Global Business Development",
+		company: "Yahoo Japan",
+		companyLogo: "/images/Brand/logo-yahoo-japan.svg",
+		comment: "SiliconMint developed for us an intelligent solution to review and approve ad requests—a process which had previously been manual and slow. With the SiliconMint-built solution, we were able to dramatically accelerate the ad approval process without hiring thousands of QC personnel.",
+		img: "/images/services/review/img-photo-Naohisa-Takahashi.jpg"
+	},
+	{
+		id: 4,
+		name: "Leon Hounshell",
+		designation: "Chief Technology Officer",
+		company: "Verizon Business",
+		companyLogo: "/images/Brand/logo-verizon.svg",
+		comment: "Using SiliconMint's AI engine and their engineering team was a great decision for us. They built the core foundation of our ThingSpace IoT platform on time and within budget, helping us serve millions of customers across the country. I would highly recommend the SiliconMint team for their drive and dedication.",
+		img: "/images/services/review/img-photo-Leon-Hounshell.jpg"
+	},
 ]
 
 

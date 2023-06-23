@@ -117,10 +117,11 @@ nav.stroke ul li a:hover:after {
 	filter: grayscale(0%);
 }
 
-.collapse{
+.collapse {
 	border-radius: 5px !important;
-	
+
 }
+
 /* .collapse-title{
 	padding:15px !important;
 } */
@@ -311,17 +312,23 @@ nav.stroke ul li a:hover:after {
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-	color: white !important;
-	border: 2px solid white;
+	color: #2B3949 !important;
+	/* border: 2px solid #F8FAFB; */
 	border-radius: 50% !important;
-	font-size: 16px !important;
-	padding: 10px 14px !important;
+	font-size: 18px !important;
+	padding: 14px 18px !important;
 	opacity: 80%;
+	background-color: white;
+	box-shadow: #2B3949;
+	font-weight: 800;
 }
 
 .swiper-pagination-bullet {
 	background: #FFC23B !important;
 }
+
+
+
 
 
 
@@ -477,15 +484,17 @@ nav.stroke ul li a:hover:after {
 		font-size: 12px;
 	}
 
-	.ikigai-text::before{
+	.ikigai-text::before {
 		right: 65px;
 	}
+
 	.title {
 		font-size: 20px;
 		font-weight: 600;
 	}
+
 	.copy {
 		font-size: 14px;
 	}
-	
+
 }
