@@ -16,7 +16,7 @@ const Header = () => {
 		{ name: "Services", path: "/services" },
 		{ name: "Our Work", path: "/our-work" },
 		{ name: "Products", path: "/products" },
-		{ name: "Company", path: "/company" },
+		{ name: "Company", path: "/about-us" },
 	];
 	const isActive = (path) => router.pathname === path;
 
