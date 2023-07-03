@@ -41,7 +41,7 @@ const ContactBanner = () => {
                                         <h3 className='text-2xl font-semibold'>The Bahamas</h3>
                                         <p className='text-sm lg:text-base'>#81 School Lane and <br /> Dowdeswell Street Nassau, The Bahamas</p>
                                         <p className='text-sm lg:text-base'>1-242-698-1565 / 1-242-808-1561</p>
-                                        <p>accounts@sunrise-bahamas.net / <br />customercare@sunrise-bahamas.net</p>
+                                        <p className='text-sm lg:text-base'>customercare@sunrise-bahamas.net</p>
                                     </div>
                                     <Image src={"/images/contact/bg-img-01.jpg"} alt={"form"} width={204} height={456} className='hidden lg:block' />
                                 </div>

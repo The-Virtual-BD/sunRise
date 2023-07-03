@@ -1,6 +1,6 @@
 import React from 'react';
 
-const News = () => {
+const Products = () => {
     return (
         <div>
             <div style={{
@@ -12,7 +12,7 @@ const News = () => {
                 <div className=' '>
                     <div className="text-start mb-10 px-5 lg:px-24 ">
                         <div className='flex items-center justify-start '>
-                            <h1 className='why-header-design'>Our Latest News</h1>
+                            <h1 className='why-header-design'>Products</h1>
                         </div>
                         <h1 className="text-2xl lg:text-5xl font-bold max-w-5xl my-2">Passionate & driven</h1>
                         <h3 className="text-lg lg:text-2xl font-semibold max-w-5xl pt-2 pb-5">software development + consulting</h3>
@@ -24,4 +24,4 @@ const News = () => {
     );
 };
 
-export default News;
+export default Products;

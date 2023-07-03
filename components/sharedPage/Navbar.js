@@ -19,10 +19,10 @@ const Navbar = () => {
             name: "Company",
             path: "/about-us",
             subMenuItems: [
-                { name: "About", path: "/about-us" },
+                { name: "About Us", path: "/about-us" },
                 { name: "News", path: "/latest-news" },
-                { name: "Contact", path: "/contacts" },
-                { name: "Goal Tracker", path: "/contacts" },
+                { name: "Contact Us", path: "/contacts" },
+                { name: "Goal Tracker", path: "/goal-tracker" },
             ],
         },
     ];
@@ -71,7 +71,7 @@ const Navbar = () => {
                                             <summary className={`${isActive(item.path) ? "active text-primary" : "text-fontclr"}`}>
                                                 {item.name}
                                             </summary>
-                                            <ul className="absolute  bg-darkBg text-white rounded-md px-4 ">
+                                            <ul className="absolute  bg-darkBg text-white rounded-md px-2 ">
                                                 {item.subMenuItems.map((subItem, subIndex) => (
                                                     <li key={subIndex}>
                                                         <Link href={subItem.path}>{subItem.name}</Link>
@@ -117,7 +117,7 @@ const Navbar = () => {
                                                 >
                                                     {item.name}
                                                 </summary>
-                                                <ul className=" bg-darkBg text-white rounded-md  px-4">
+                                                <ul className=" bg-darkBg text-white rounded-md  px-2">
                                                     {item.subMenuItems.map((subItem, subIndex) => (
                                                         <li key={subIndex}>
                                                             <Link href={subItem.path} onClick={() => setOpen(false)} className={`${isActive(subItem.path) ? "active text-primary" : "text-fontclr"}`}>{subItem.name}</Link>
