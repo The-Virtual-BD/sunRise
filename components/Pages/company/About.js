@@ -76,9 +76,6 @@ const AboutMission = () => {
 };
 
 
-
-
-
 const AboutHistory = () => {
     return (
         <div className='  bg-white p-5 lg:p-10 py-20'>

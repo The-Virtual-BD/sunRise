@@ -466,6 +466,9 @@ nav.stroke ul li a:hover:after {
 }
 
 @media screen and (max-width:565px) {
+	.slider-bg{
+		height: 100vh;
+	}
 	.header-design {
 		font-size: 20px;
 		padding: 12px 26px 15px 40px;

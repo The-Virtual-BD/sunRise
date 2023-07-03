@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
 import CrispChat from "../components/sharedPage/CrispChat"
+import Navbar from "../components/sharedPage/Navbar";
 
 function MyApp({ Component, pageProps }) {
 	useEffect(() => {
@@ -21,7 +22,8 @@ function MyApp({ Component, pageProps }) {
 
 			<div>
 				<CrispChat />
-				<Header />
+				{/* <Header /> */}
+				<Navbar />
 				<Component {...pageProps} />
 				<ToastContainer />
 				<Footer />

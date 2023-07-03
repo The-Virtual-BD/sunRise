@@ -16,7 +16,18 @@ const Header = () => {
 		{ name: "Services", path: "/services" },
 		{ name: "Our Work", path: "/our-work" },
 		{ name: "Products", path: "/products" },
-		{ name: "Company", path: "/about-us" },
+		{
+			name: "Company",
+			path: "/about-us",
+			sub1Menu: {
+				name: "About",
+				path: "/about-us",
+			},
+			sub2Menu: {
+				name: "News",
+				path: "/about-us",
+			},
+		},
 	];
 	const isActive = (path) => router.pathname === path;
 
@@ -35,13 +46,27 @@ const Header = () => {
 		};
 	}, []);
 
+
+
+	{/* <li>
+		<details open>
+			<summary>Parent item</summary>
+			<ul>
+				<li><a>level 2 item 1</a></li>
+				<li><a>level 2 item 2</a></li>
+			</ul>
+		</details>
+	</li> */}
+
 	return (
 		<div>
 			<div
 				className={`bg-darkBg w-full  fixed z-50 ease-in  duration-300 ${navbarTop ? " bg-opacity-100 lg:bg-opacity-0" : "bg-opacity-100"
 					}`}
 			>
-				<header className="flex items-center  justify-between max-w-7xl mx-auto py-1.5">
+				<header className="flex items-center  justify-between max-w-7xl mx-auto py-1.5 max-h-20">
+
+					{/* Open & Close Button */}
 					<button
 						onClick={() => setOpen(!open)}
 						className="block lg:hidden mt-2 lg:mt-0 px-6"
@@ -53,6 +78,8 @@ const Header = () => {
 						)}
 					</button>
 
+
+					{/* Logo */}
 					<Link href={"/"}>
 						<Image
 							src={"/images/logo.png"}
@@ -63,8 +90,9 @@ const Header = () => {
 						{/* <h2 className="text-2xl font-bold text-white text-uppercrease"> SILLICOVALLEY</h2> */}
 					</Link>
 
+					{/* Navbar */}
 					<nav class="stroke ml-5">
-						<ul className="hidden  lg:flex lg:flex-row justify-between items-center gap-2 text-xl ">
+						<ul className="hidden  lg:flex lg:flex-row justify-between items-center gap-2 text-xl z-100">
 							{memuItems.map((item, index) => (
 								<li key={index}>
 									<Link
@@ -76,8 +104,25 @@ const Header = () => {
 									>
 										{item.name}
 									</Link>
+
+									
 								</li>
+
+
 							))}
+
+							
+
+							{/* <li>
+								<details close>
+									<summary>Company</summary>
+									<ul>
+										<li><a>About Us</a></li>
+										<li><a>Latest News</a></li>
+										<li><a>Contact Us</a></li>
+									</ul>
+								</details>
+							</li> */}
 						</ul>
 					</nav>
 
