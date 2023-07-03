@@ -22,6 +22,7 @@ const Navbar = () => {
                 { name: "About", path: "/about-us" },
                 { name: "News", path: "/latest-news" },
                 { name: "Contact", path: "/contacts" },
+                { name: "Goal Tracker", path: "/contacts" },
             ],
         },
     ];
@@ -70,7 +71,7 @@ const Navbar = () => {
                                             <summary className={`${isActive(item.path) ? "active text-primary" : "text-fontclr"}`}>
                                                 {item.name}
                                             </summary>
-                                            <ul className="absolute mt-1 bg-darkBg text-white rounded-md py-1 px-4 ">
+                                            <ul className="absolute  bg-darkBg text-white rounded-md px-4 ">
                                                 {item.subMenuItems.map((subItem, subIndex) => (
                                                     <li key={subIndex}>
                                                         <Link href={subItem.path}>{subItem.name}</Link>
@@ -91,7 +92,7 @@ const Navbar = () => {
                         </ul>
                     </nav>
 
-                    <button className="bg-primary rounded-sm text-darkBg px-5 lg:px-6 py-1.5 lg:py-2 font-bold text-lg lg:text-xl">
+                    <button className="bg-primary rounded-sm hidden lg:block text-darkBg px-5 lg:px-6 py-1.5 lg:py-2 font-bold text-lg lg:text-xl">
                         Get in touch
                     </button>
                 </header>
@@ -116,7 +117,7 @@ const Navbar = () => {
                                                 >
                                                     {item.name}
                                                 </summary>
-                                                <ul className="mt-1 bg-darkBg text-white rounded-md py-1 px-4">
+                                                <ul className=" bg-darkBg text-white rounded-md  px-4">
                                                     {item.subMenuItems.map((subItem, subIndex) => (
                                                         <li key={subIndex}>
                                                             <Link href={subItem.path} onClick={() => setOpen(false)} className={`${isActive(subItem.path) ? "active text-primary" : "text-fontclr"}`}>{subItem.name}</Link>
@@ -135,6 +136,10 @@ const Navbar = () => {
                                         )}
                                     </li>
                                 ))}
+
+                                <button className="bg-primary rounded-sm text-darkBg px-5 lg:px-6 py-1.5 lg:py-2 font-bold text-lg lg:text-xl w-full mt-4">
+                                    Get in touch
+                                </button>
                             </ul>
                         </nav>
                     </div>
