@@ -332,7 +332,83 @@ export const feedbacksData = [
 		comment: "Using SiliconMint's AI engine and their engineering team was a great decision for us. They built the core foundation of our ThingSpace IoT platform on time and within budget, helping us serve millions of customers across the country. I would highly recommend the SiliconMint team for their drive and dedication.",
 		img: "/images/services/review/img-photo-Leon-Hounshell.jpg"
 	},
-]
+];
+
+
+export const OurProjects = [
+	{
+		id: 1,
+		category: "Sunrise-UAV-Systems",
+		model: "HC-140H Fixed Wing UAV Wing",
+		img: "/images/projects/HC-140H.jpg"
+	},
+	{
+		id: 2,
+		category: "Sunrise-UAV-Systems",
+		model: "HC-132H Fixed-wing UAV Wing",
+		img: "/images/projects/HC-132H-Fixed-wing-UAV.jpg"
+	},
+	{
+		id: 3,
+		category: "Sunrise-UAV-Systems",
+		model: "HC-280 Helicopter Main Rotor",
+		img: "/images/projects/HC-280-Hel..jpg"
+	},
+	{
+		id: 4,
+		category: "Sunrise-UAV-Systems",
+		model: "HC-530 VTOL Fixed-wing UAV",
+		img: "/images/projects/HC-530.jpg"
+	},
+	{
+		id: 5,
+		category: "Sunrise-UAV-Systems",
+		model: "HC-525 VTOL Fixed-wing UAV",
+		img: "/images/projects/HC-525.jpg"
+	},
+	{
+		id: 6,
+		category: "Sunrise-UAV-Systems",
+		model: "HC-521 VTOL Fixed-wing UAV",
+		img: "/images/projects/HC-521.jpg"
+	},
+	{
+		id: 7,
+		category: "Sunrise-UAV-Systems",
+		model: "An unmanned aerial vehicle",
+		img: "/images/projects/SmartUAV-2.jpg"
+	},
+	{
+		id: 8,
+		category: "Sunrise-UAV-Systems",
+		model: "HC-512 VTOL Fixed-wing UAV",
+		img: "/images/projects/HC-512.jpg"
+	},
+	{
+		id: 9,
+		category: "Advance-two-ways-handsets",
+		model: "Global and local trends",
+		img: "/images/projects/1-3.jpg"
+	},
+	{
+		id: 10,
+		category: "Air-Purifiers",
+		model: "The all new SunCom",
+		img: "/images/projects/purifying2.jpg"
+	},
+	{
+		id: 11,
+		category: "Touchless-Thermometers",
+		model: "Touchless Thermometers",
+		img: "/images/projects/tempa.jpg"
+	},
+	{
+		id: 12,
+		category: "Biometric-solutions",
+		model: "Biometric Solutions",
+		img: "/images/projects/Biometric-palm-1.jpg"
+	},
+];
 
 
 

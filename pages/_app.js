@@ -3,6 +3,7 @@ import Header from "../components/sharedPage/Header";
 import "../styles/globals.css";
 import "../styles/team.css";
 import '../styles/services.css';
+import '../styles/workCard.css';
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import { useEffect } from "react";

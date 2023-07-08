@@ -11,7 +11,7 @@ const About = () => {
             <AboutBanner />
             <AboutMission />
             <Team />
-            <Feedbacks />
+            {/* <Feedbacks /> */}
             <AboutHistory />
             <Blogs />
 
@@ -78,9 +78,9 @@ const AboutMission = () => {
 
 const AboutHistory = () => {
     return (
-        <div className='  bg-white p-5 lg:p-10 py-20'>
+        <div className='bg-[#F8FAFB]   p-5 lg:p-10 py-20'>
 
-            <div className='bg-[#F8FAFB] text-darkBg  max-w-7xl mx-auto px-5 lg:px-0 shadow-xl'>
+            <div className=' text-darkBg bg-white  max-w-7xl mx-auto px-5 lg:px-0 shadow-xl'>
                 <div className='p-3 lg:p-14 flex flex-col lg:flex-row gap-5'>
                     <div className='w-full lg:w-1/2'>
                         <h2 className='text-2xl lg:text-4xl font-bold pb-3 '>Our History</h2>
