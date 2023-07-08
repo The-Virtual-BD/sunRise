@@ -131,27 +131,6 @@ export const implementeServices = [
 	},
 ]
 
-export const blogs = [
-	{
-		id: 1,
-		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
-		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
-		img: "/images/img-news-ddt.jpg"
-	},
-	{
-		id: 2,
-		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
-		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
-		img: "/images/img-news-mintdata30.jpg"
-	},
-	{
-		id: 3,
-		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
-		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
-		img: "/images/img-news-03.jpg"
-	},
-];
-
 export const teamMember = [
 	{
 		id: 2,
@@ -409,6 +388,71 @@ export const OurProjects = [
 		img: "/images/projects/Biometric-palm-1.jpg"
 	},
 ];
+
+
+export const blogs = [
+	{
+		id: 1,
+		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-ddt.jpg"
+	},
+	{
+		id: 2,
+		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-mintdata30.jpg"
+	},
+	{
+		id: 3,
+		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-03.jpg"
+	},
+];
+
+
+export const blogse = [
+	{
+		id: 1,
+		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-ddt.jpg"
+	},
+	{
+		id: 2,
+		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-mintdata30.jpg"
+	},
+	{
+		id: 3,
+		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-03.jpg"
+	},
+	{
+		id: 4,
+		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-ddt.jpg"
+	},
+	{
+		id: 5,
+		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-mintdata30.jpg"
+	},
+	{
+		id: 6,
+		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-03.jpg"
+	},
+];
+
+
+
 
 
 

@@ -19,7 +19,7 @@ const WorksBanner = () => {
         <div style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/projects/bg-top-work.jpg")`,
             boxShadow: "0px 0px 10px 5px rgba(0, 0, 0, 0.2)"
-        }} className="  text-white flex items-center slider-bg">
+        }} className="  text-white flex items-center top-header-bg">
 
 
             <div className=' '>

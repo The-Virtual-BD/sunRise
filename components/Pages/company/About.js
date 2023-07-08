@@ -26,7 +26,7 @@ const AboutBanner = () => {
     return (
         <div>
             <div style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/banner/img-slider-03.png")`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/bg-top-about-us.jpg")`,
                 boxShadow: "0px 0px 10px 5px rgba(0, 0, 0, 0.2)"
             }} className="  text-white flex items-center slider-bg">
 

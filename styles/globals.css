@@ -80,6 +80,12 @@ nav.stroke ul li a:hover:after {
 	height: 87vh;
 	width: 100%;
 }
+.top-header-bg{
+	background-position: center;
+	background-size: cover;
+	height: 60vh;
+	width: 100%;
+}
 
 .header-design {
 	font-size: 30px;

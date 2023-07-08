@@ -36,10 +36,10 @@ const ContactBanner = () => {
 
 
                             <div className='relative top-32'>
-                                <div className='flex justify-between items-center '>
+                                <div className='flex justify-between items-start gap-5'>
                                     <div >
                                         <h3 className='text-2xl font-semibold'>The Bahamas</h3>
-                                        <p className='text-sm lg:text-base'>#81 School Lane and <br /> Dowdeswell Street Nassau, The Bahamas</p>
+                                        <p className='text-sm lg:text-base'>#81 School Lane and  Dowdeswell Street <br /> Nassau, The Bahamas</p>
                                         <p className='text-sm lg:text-base'>1-242-698-1565 / 1-242-808-1561</p>
                                         <p className='text-sm lg:text-base'>customercare@sunrise-bahamas.net</p>
                                     </div>
@@ -120,18 +120,23 @@ const ContactLocation = () => {
 
                         <div className='w-full lg:w-1/2 h-full flex items-center justify-between gap-2  '>
                             <div className='p-5'>
-                                <h3 className='text-2xl font-semibold'>The Bahamas</h3>
-                                <p className='text-sm lg:text-base'>#81 School Lane and <br /> Dowdeswell Street Nassau, The Bahamas</p>
-                                <p className='text-sm lg:text-base'>1-242-698-1565 / 1-242-808-1561</p>
-                                <p>accounts@sunrise-bahamas.net / <br />customercare@sunrise-bahamas.net</p>
+                                <h3 className='text-2xl font-semibold'>The Virtual BD</h3>
+                                <p className='text-sm lg:text-base'>Home 315, Road 3, Phase 2, Sonadanga R/A,
+                                    Khulna 9100, Bangladesh.</p>
+
+                                <p className='text-sm lg:text-base'>+880 1902-624501</p>
+
+                                <p className='text-sm lg:text-base'>contact@thevirtualbd.com</p>
                             </div>
-                            <div>
-                                <img src="/images/contact/bg-img-02.jpg" alt="" srcset="" className='' />
-                            </div>
+                           {/*  <div>
+                                <img src="/images/contact/bg-img-02.jpg" alt="" srcset="" className='h-full' />
+                            </div> */}
                         </div>
 
                         <div className='w-full lg:w-1/2 h-full hidden lg:block'>
-                            <img src="/images/contact/bg-img-03.jpg" alt="" srcset="" />
+                            {/* <img src="/images/contact/bg-img-03.jpg" alt="" srcset="" /> */}
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.8384567346728!2d89.54328359197726!3d22.818265001859178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9bd89294df9f%3A0xf7219ca732219803!2sThe%20Virtual%20BD!5e0!3m2!1sen!2sbd!4v1688800416546!5m2!1sen!2sbd"  height="420" className='w-full' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                         </div>
                     </div>
