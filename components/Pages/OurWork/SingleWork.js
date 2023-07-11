@@ -21,9 +21,9 @@ const SingleWork = () => {
 	return (
 		<div>
 			<SingleWorkBanner project={project} />
-			<div className="bg-[#F8FAFB] text-darkBg">
+			<div className="bg-[#F8FAFB] text-darkBg px-5 lg:px-0">
 				<div className="max-w-7xl mx-auto py-10 ">
-					<div className="w-1/2">
+					<div className="w-full lg:w-1/2 ">
 						<Image
 							src={project?.img}
 							alt={project?.model}
@@ -32,14 +32,27 @@ const SingleWork = () => {
 							height={100}
 						/>
 					</div>
-					<div className="mt-5">
-						<p className="font-bold"> Name: {project?.model}</p>
-						<p>Wing Span: {project?.WingSpan}</p>
-						<p>Take off Weight: {project?.TakeoffWeight}</p>
-						<p>Payload: {project?.Payload}</p>
-						<p>Endurance: {project?.Endurance}</p>
-						<p>Flight Speed: {project?.FlightSpeed}</p>
-						<p>Flight Altitude: {project?.FlightAltitude}</p>
+					<div className="mt-5 flex items-start gap-6 ">
+						<div>
+							<p className="font-bold">Model Name:</p>
+							<p>Category:</p>
+							<p>Wing Span:</p>
+							<p>Take off Weight:</p>
+							<p>Payload:</p>
+							<p>Endurance:</p>
+							<p>Flight Speed:</p>
+							<p>Flight Altitude:</p>
+						</div>
+						<div>
+							<p className="font-bold"> {project?.model}</p>
+							<p> {project?.category}</p>
+							<p> {project?.WingSpan}</p>
+							<p> {project?.TakeoffWeight}</p>
+							<p> {project?.Payload}</p>
+							<p> {project?.Endurance}</p>
+							<p> {project?.FlightSpeed}</p>
+							<p> {project?.FlightAltitude}</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -64,7 +77,7 @@ const SingleWorkBanner = ({ project }) => {
 						<div className="flex items-center justify-start ">
 							<h1 className="why-header-design">{project?.model}</h1>
 						</div>
-						<h1 className="text-2xl lg:text-5xl font-bold max-w-5xl my-2">
+						<h1 className="text-2xl lg:text-3xl font-semibold max-w-5xl my-2">
 							{project?.category}
 						</h1>
 					</div>

@@ -1,20 +1,67 @@
-import React from 'react';
-import verizon from "../../public/images/Brand/logo-verizon.svg"
-import Image from 'next/image';
+import React from "react";
+import verizon from "../../public/images/Brand/logo-verizon.svg";
+import Image from "next/image";
+import Marquee from "react-fast-marquee";
+
+const brandImg = [
+	{
+		id: 1,
+		img: "/images/Brand/vbd.jpg",
+	},
+	{
+		id: 2,
+		img: "/images/Brand/moth.jpg",
+	},
+	{
+		id: 3,
+		img: "/images/Brand/postal-logo.png",
+	},
+	{
+		id: 4,
+		img: "/images/Brand/works.jpg",
+	},
+	{
+		id: 5,
+		img: "/images/Brand/logo-nyse.svg",
+	},
+	{
+		id: 6,
+		img: "/images/Brand/logo-point-one.png",
+	},
+	{
+		id: 7,
+		img: "/images/Brand/works.jpg",
+	},
+	{
+		id: 8,
+		img: "/images/Brand/logo-nyse.svg",
+	},
+	{
+		id: 9,
+		img: "/images/Brand/logo-point-one.png",
+	},
+];
 
 const Brand = () => {
-    return (
-        <div className='bg-white p-7 border-[1px] border-gray-300 '>
-            <div className='grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 items-center gap-5 max-w-7xl mx-auto'>
-                <img src={"/images/Brand/vbd.jpg"}  alt='brand' className='brand-image' />
-                <img src={"/images/Brand/moth.jpg"} alt='brand' className='brand-image' />
-                <img src={"/images/Brand/postal-logo.png"}  alt='brand' className='brand-image' />
-                <img src={"/images/Brand/works.jpg"}  alt='brand' className='brand-image' />
-                <img src={"/images/Brand/logo-nyse.svg"}  alt='brand' className='brand-image' />
-                <img src={"/images/Brand/logo-point-one.png"} alt='brand' className='brand-image' />
-            </div>
-        </div>
-    );
+	return (
+		<div className="bg-white  border-[1px] border-gray-300 h-20 overflow-hidden">
+			<div className=" flex items-center justify-center">
+				<Marquee  speed={50} className="w-full h-20  flex items-center justify-center">
+					{brandImg.map((data) => (
+						<BrandCard key={data.id} img={data.img} />
+					))}
+				</Marquee>
+			</div>
+		</div>
+	);
 };
 
 export default Brand;
+
+const BrandCard = ({ img }) => {
+	return (
+		<div > 
+			<Image className="mx-10" src={img} width={100} height={30} alt="" />
+		</div>
+	);
+};

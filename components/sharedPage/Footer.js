@@ -34,7 +34,7 @@ const Footer = () => {
 
 			<div className="footer footer-center p-3 px-5  bg-[#23303E] text-white">
 				<div>
-					<p>Copyright © 2023 - All right reserved by SiliconVally</p>
+					<p>Copyright © 2023 - All right reserved by SunRise Com.</p>
 				</div>
 			</div>
 		</footer>

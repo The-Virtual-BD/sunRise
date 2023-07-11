@@ -61,7 +61,7 @@ const Header = () => {
 	return (
 		<div>
 			<div
-				className={`bg-darkBg w-full  fixed z-50 ease-in  duration-300 ${navbarTop ? " bg-opacity-100 lg:bg-opacity-0" : "bg-opacity-100"
+				className={`bg-[#ffffff] w-full  fixed z-50 ease-in  duration-300 ${navbarTop ? " bg-opacity-100 lg:bg-opacity-0" : "bg-opacity-100"
 					}`}
 			>
 				<header className="flex items-center  justify-between max-w-7xl mx-auto py-1.5 max-h-20">
