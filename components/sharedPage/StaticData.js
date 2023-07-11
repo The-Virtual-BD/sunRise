@@ -47,21 +47,19 @@ export const ourAchivment = [
 		id: 1,
 		title: "2012",
 		subTitle: "founding",
-		subTitle2: "year"
+		subTitle2: "year",
 	},
 	{
 		id: 2,
 		title: "12M",
 		subTitle: "consumers",
-		subTitle2: "served"
-
+		subTitle2: "served",
 	},
 	{
 		id: 3,
 		title: "13+",
 		subTitle: "Total developed",
-		subTitle2: "software"
-
+		subTitle2: "software",
 	},
 	/* {
 		id: 4,
@@ -90,46 +88,52 @@ export const implementeServices = [
 	{
 		id: 1,
 		title: "Dedicated teams",
-		details: "Deliver scalable digital solutions with a dedicated team. Flex team size to deliver faster outcomes in a cost efficient way.",
+		details:
+			"Deliver scalable digital solutions with a dedicated team. Flex team size to deliver faster outcomes in a cost efficient way.",
 		icon: "/images/icon-green-services-01.svg",
-		link: "Hire dedicated developers"
+		link: "Hire dedicated developers",
 	},
 	{
 		id: 2,
 		title: "Product design, UI/UX",
-		details: "Leverage our product design expertise. We'll work with your organization to craft the definition for digital experiences across desktop, web, mobile, and TV.",
+		details:
+			"Leverage our product design expertise. We'll work with your organization to craft the definition for digital experiences across desktop, web, mobile, and TV.",
 		icon: "/images/icon-green-services-02.svg",
-		link: ""
+		link: "",
 	},
 	{
 		id: 3,
 		title: "QA & testing strategy",
-		details: "Utilize our quality assurance services for everything from test plan strategy to implementation. Ensure quality at every stage of development.",
+		details:
+			"Utilize our quality assurance services for everything from test plan strategy to implementation. Ensure quality at every stage of development.",
 		icon: "/images/icon-green-services-03.svg",
-		link: ""
+		link: "",
 	},
 	{
 		id: 4,
 		title: "IT staff augmentation",
-		details: "Harness the power of global talent. Augment your software development staff. Bridge skill set gaps. Ship software faster.",
+		details:
+			"Harness the power of global talent. Augment your software development staff. Bridge skill set gaps. Ship software faster.",
 		icon: "/images/icon-green-services-04.svg",
-		link: "IT staff augmentation"
+		link: "IT staff augmentation",
 	},
 	{
 		id: 5,
 		title: "Legacy migration",
-		details: "Migrate legacy systems to modern platforms, clouds, frameworks, and technologies.",
+		details:
+			"Migrate legacy systems to modern platforms, clouds, frameworks, and technologies.",
 		icon: "/images/icon-green-services-05.svg",
-		link: ""
+		link: "",
 	},
 	{
 		id: 6,
 		title: "Maintenance & support",
-		details: "Take advantage of our maintenance and support services to keep production applications stable, bug-free, and secure.",
+		details:
+			"Take advantage of our maintenance and support services to keep production applications stable, bug-free, and secure.",
 		icon: "/images/icon-green-services-06.svg",
-		link: ""
+		link: "",
 	},
-]
+];
 
 export const teamMember = [
 	{
@@ -164,7 +168,6 @@ export const teamMember = [
 		linkedIn: "#",
 		github: "#",
 	},
-
 ];
 
 export const BenifitsData = [
@@ -172,62 +175,63 @@ export const BenifitsData = [
 		id: 1,
 		title: "Western mentality",
 		desc: "We are hardworking, passionate, and straightforward people—our mentality and cultural values closely match those in the West.",
-		img: "/images/why-us/bg-card-01.jpg"
+		img: "/images/why-us/bg-card-01.jpg",
 	},
 	{
 		id: 2,
 		title: "Technical strength",
 		desc: "Our engineers are known for their high technical competency level. Many have started learning programming early in their life.",
-		img: "/images/why-us/bg-card-02.jpg"
+		img: "/images/why-us/bg-card-02.jpg",
 	},
 	{
 		id: 3,
 		title: "Experienced leadership",
 		desc: "Our teams are led by technical staff with a strong programming background, where many started practicing the craft from a young age.",
-		img: "/images/why-us/bg-card-03.jpg"
+		img: "/images/why-us/bg-card-03.jpg",
 	},
 	{
 		id: 4,
 		title: "Robust education",
 		desc: "Besides years of hands-on experience, our staff received high-quality IT education through cutting-edge faciliies for learning software engineering, quality assurance, and data-science.",
-		img: "/images/why-us/bg-card-04.jpg"
+		img: "/images/why-us/bg-card-04.jpg",
 	},
 	{
 		id: 5,
 		title: "Time zone advantage",
 		desc: "We use the time difference to our advantage. With overlap of 4-5 hours each day with our clients in the US, we use our meetings to drive efficient communication and do heads-down work.",
-		img: "/images/why-us/bg-card-05.jpg"
+		img: "/images/why-us/bg-card-05.jpg",
 	},
 	{
 		id: 6,
 		title: "Cost effective",
 		desc: "Doing things right and efficiently matters. While price is the amount you pay per week for the development team, cost is your total cost of ownership (TCO). We have one of the lowest TCOs in the industry.",
-		img: "/images/why-us/bg-card-06.jpg"
+		img: "/images/why-us/bg-card-06.jpg",
 	},
 ];
-
 
 export const serviceStragty = [
 	{
 		id: 1,
-		name: 'Analyze',
-		details: "We examine your work processes and technology choices, identifying problems and bottlenecks.",
-		icon: "/images/services/icon-workflow-analyze.svg"
+		name: "Analyze",
+		details:
+			"We examine your work processes and technology choices, identifying problems and bottlenecks.",
+		icon: "/images/services/icon-workflow-analyze.svg",
 	},
 	{
 		id: 2,
-		name: 'Plan',
-		details: "We create an actionable plan to help you resolve issues and re-architect where needed.",
-		icon: "/images/services/icon-workflow-plan.svg"
+		name: "Plan",
+		details:
+			"We create an actionable plan to help you resolve issues and re-architect where needed.",
+		icon: "/images/services/icon-workflow-plan.svg",
 	},
 	{
 		id: 3,
-		name: 'Transform',
-		details: "Our software engineers implement the necessary changes and initiatives.",
-		icon: "/images/services/icon-workflow-transform.svg"
+		name: "Transform",
+		details:
+			"Our software engineers implement the necessary changes and initiatives.",
+		icon: "/images/services/icon-workflow-transform.svg",
 	},
 ];
-
 
 export const approachData = [
 	{
@@ -237,40 +241,48 @@ export const approachData = [
 		descHead1: "Business and IT needs assessment",
 		descContent1: "Analysis of the current business & IT goals and objectives.",
 		descHead2: "In-house vs outsourced analysis",
-		descContent2: "Cost-benefit analysis to decide which IT tasks and functions should be outsourced.",
-		icon: "/images/services/icon-white-approach-strategic-advisory.svg"
+		descContent2:
+			"Cost-benefit analysis to decide which IT tasks and functions should be outsourced.",
+		icon: "/images/services/icon-white-approach-strategic-advisory.svg",
 	},
 	{
 		id: 2,
 		title: "Technical definition",
 		margin: "ml-2 lg:ml-10",
 		descHead1: "Enterprise architecture",
-		descContent1: "Detailed definition of the infrastructure, systems, and components needed to satisfy all business and technical requirements.",
+		descContent1:
+			"Detailed definition of the infrastructure, systems, and components needed to satisfy all business and technical requirements.",
 		descHead2: "Build vs buy (COTS)",
-		descContent2: "In-depth analysis of the tradeoffs for building each part of the system in-house vs leveraging commercial off-the-shelf (COTS) software, including upfront and ongoing costs with a total and projected ROI.",
-		icon: "/images/services/icon-white-approach-technical-definition.svg"
+		descContent2:
+			"In-depth analysis of the tradeoffs for building each part of the system in-house vs leveraging commercial off-the-shelf (COTS) software, including upfront and ongoing costs with a total and projected ROI.",
+		icon: "/images/services/icon-white-approach-technical-definition.svg",
 	},
 	{
 		id: 3,
 		title: "Optimized operations",
 		margin: "ml-4 lg:ml-20",
 		descHead1: "Software development processes",
-		descContent1: "Assessment of the current software development processes and their efficiency. Optimization of the same processes to streamline delivery with current development capacity.",
+		descContent1:
+			"Assessment of the current software development processes and their efficiency. Optimization of the same processes to streamline delivery with current development capacity.",
 		descHead2: "Software delivery & DevOps",
-		descContent2: "Definition and implementation of effective DevOps processes, taking into account how existing teams work and the current bottlenecks.",
-		icon: "/images/services/icon-white-approach-optimized-operations.svg"
+		descContent2:
+			"Definition and implementation of effective DevOps processes, taking into account how existing teams work and the current bottlenecks.",
+		icon: "/images/services/icon-white-approach-optimized-operations.svg",
 	},
 	{
 		id: 4,
 		title: "Implementation plan",
 		margin: "ml-6 lg:ml-32",
 		descHead1: "Rollout & deployment",
-		descContent1: "Detailed technical plan for the deployment of complex, distributed systems and the runbooks associated with operating them.",
+		descContent1:
+			"Detailed technical plan for the deployment of complex, distributed systems and the runbooks associated with operating them.",
 		descHead2: "Software development & testing",
-		descContent2: "In-depth plan for the development and testing of key features, broken down by milestones and key business objectives achieved in each phase.",
+		descContent2:
+			"In-depth plan for the development and testing of key features, broken down by milestones and key business objectives achieved in each phase.",
 		descHead3: "Training & support plan",
-		descContent3: "Creation of a thorough plan for how to train both IT personnel and business stakeholders on the operation, use, and maintenance of the created software systems.",
-		icon: "/images/services/icon-white-approach-implementation-plan.svg"
+		descContent3:
+			"Creation of a thorough plan for how to train both IT personnel and business stakeholders on the operation, use, and maintenance of the created software systems.",
+		icon: "/images/services/icon-white-approach-implementation-plan.svg",
 	},
 ];
 
@@ -281,8 +293,9 @@ export const feedbacksData = [
 		designation: "CEO",
 		company: "Motif Investing",
 		companyLogo: "/images/Brand/moth.jpg",
-		comment: "SiliconMint delivered core parts of our real-time trading platform, including a big data system that analyzes over a million stock market messages per second. I would highly recommend SiliconMint for their dedication and passion for doing things right the first time around.",
-		img: "/images/services/review/img-photo-Leon-Hounshell.jpg"
+		comment:
+			"SiliconMint delivered core parts of our real-time trading platform, including a big data system that analyzes over a million stock market messages per second. I would highly recommend SiliconMint for their dedication and passion for doing things right the first time around.",
+		img: "/images/services/review/img-photo-Leon-Hounshell.jpg",
 	},
 	{
 		id: 2,
@@ -290,8 +303,9 @@ export const feedbacksData = [
 		designation: "CEO",
 		company: "Point One Navigation",
 		companyLogo: "/images/Brand/logo-point-one.png",
-		comment: "SiliconMint helped us make the impossible possible—writing a computer vision system that identifies geometry in 3D space from a single video camera feed. I was astounded by their technical knowledge and how it's coupled with an unbridled passion for moving quickly, yet with precision.",
-		img: "/images/services/review/img-photo-Aaron-Nathan.jpg"
+		comment:
+			"SiliconMint helped us make the impossible possible—writing a computer vision system that identifies geometry in 3D space from a single video camera feed. I was astounded by their technical knowledge and how it's coupled with an unbridled passion for moving quickly, yet with precision.",
+		img: "/images/services/review/img-photo-Aaron-Nathan.jpg",
 	},
 	{
 		id: 3,
@@ -299,8 +313,9 @@ export const feedbacksData = [
 		designation: "Manager, Global Business Development",
 		company: "Yahoo Japan",
 		companyLogo: "/images/Brand/logo-yahoo-japan.svg",
-		comment: "SiliconMint developed for us an intelligent solution to review and approve ad requests—a process which had previously been manual and slow. With the SiliconMint-built solution, we were able to dramatically accelerate the ad approval process without hiring thousands of QC personnel.",
-		img: "/images/services/review/img-photo-Naohisa-Takahashi.jpg"
+		comment:
+			"SiliconMint developed for us an intelligent solution to review and approve ad requests—a process which had previously been manual and slow. With the SiliconMint-built solution, we were able to dramatically accelerate the ad approval process without hiring thousands of QC personnel.",
+		img: "/images/services/review/img-photo-Naohisa-Takahashi.jpg",
 	},
 	{
 		id: 4,
@@ -308,175 +323,190 @@ export const feedbacksData = [
 		designation: "Chief Technology Officer",
 		company: "Verizon Business",
 		companyLogo: "/images/Brand/logo-verizon.svg",
-		comment: "Using SiliconMint's AI engine and their engineering team was a great decision for us. They built the core foundation of our ThingSpace IoT platform on time and within budget, helping us serve millions of customers across the country. I would highly recommend the SiliconMint team for their drive and dedication.",
-		img: "/images/services/review/img-photo-Leon-Hounshell.jpg"
+		comment:
+			"Using SiliconMint's AI engine and their engineering team was a great decision for us. They built the core foundation of our ThingSpace IoT platform on time and within budget, helping us serve millions of customers across the country. I would highly recommend the SiliconMint team for their drive and dedication.",
+		img: "/images/services/review/img-photo-Leon-Hounshell.jpg",
 	},
 ];
-
 
 export const OurProjects = [
 	{
 		id: 1,
 		category: "Sunrise-UAV-Systems",
 		model: "HC-140H Fixed Wing UAV Wing",
-		img: "/images/projects/HC-140H.jpg"
+		WingSpan: "5370mm",
+		TakeoffWeight: "150kg",
+		Payload: "30kg",
+		Endurance: "6h",
+		FlightSpeed: "120km/h",
+		FlightAltitude: "0-5000m",
+		img: "/images/projects/HC-140H.jpg",
 	},
 	{
 		id: 2,
 		category: "Sunrise-UAV-Systems",
 		model: "HC-132H Fixed-wing UAV Wing",
-		img: "/images/projects/HC-132H-Fixed-wing-UAV.jpg"
+		TakeoffWeight: "150kg",
+		Payload: "30kg",
+		Endurance: "6h",
+		FlightSpeed: "120km/h",
+		FlightAltitude: "0-5000m",
+		img: "/images/projects/HC-132H-Fixed-wing-UAV.jpg",
 	},
 	{
 		id: 3,
 		category: "Sunrise-UAV-Systems",
 		model: "HC-280 Helicopter Main Rotor",
-		img: "/images/projects/HC-280-Hel..jpg"
+		TakeoffWeight: "150kg",
+		Payload: "30kg",
+		Endurance: "6h",
+		FlightSpeed: "120km/h",
+		FlightAltitude: "0-5000m",
+		img: "/images/projects/HC-280-Hel..jpg",
 	},
 	{
 		id: 4,
 		category: "Sunrise-UAV-Systems",
 		model: "HC-530 VTOL Fixed-wing UAV",
-		img: "/images/projects/HC-530.jpg"
+		TakeoffWeight: "150kg",
+		Payload: "30kg",
+		Endurance: "6h",
+		FlightSpeed: "120km/h",
+		FlightAltitude: "0-5000m",
+		img: "/images/projects/HC-530.jpg",
 	},
 	{
 		id: 5,
 		category: "Sunrise-UAV-Systems",
 		model: "HC-525 VTOL Fixed-wing UAV",
-		img: "/images/projects/HC-525.jpg"
+		TakeoffWeight: "150kg",
+		Payload: "30kg",
+		Endurance: "6h",
+		FlightSpeed: "120km/h",
+		FlightAltitude: "0-5000m",
+		img: "/images/projects/HC-525.jpg",
 	},
-	{
+	/* {
 		id: 6,
 		category: "Sunrise-UAV-Systems",
 		model: "HC-521 VTOL Fixed-wing UAV",
-		img: "/images/projects/HC-521.jpg"
+		img: "/images/projects/HC-521.jpg",
 	},
 	{
 		id: 7,
 		category: "Sunrise-UAV-Systems",
 		model: "An unmanned aerial vehicle",
-		img: "/images/projects/SmartUAV-2.jpg"
+		img: "/images/projects/SmartUAV-2.jpg",
 	},
 	{
 		id: 8,
 		category: "Sunrise-UAV-Systems",
 		model: "HC-512 VTOL Fixed-wing UAV",
-		img: "/images/projects/HC-512.jpg"
+		img: "/images/projects/HC-512.jpg",
 	},
 	{
 		id: 9,
 		category: "Advance-two-ways-handsets",
 		model: "Global and local trends",
-		img: "/images/projects/1-3.jpg"
+		img: "/images/projects/1-3.jpg",
 	},
 	{
 		id: 10,
 		category: "Air-Purifiers",
 		model: "The all new SunCom",
-		img: "/images/projects/purifying2.jpg"
+		img: "/images/projects/purifying2.jpg",
 	},
 	{
 		id: 11,
 		category: "Touchless-Thermometers",
 		model: "Touchless Thermometers",
-		img: "/images/projects/tempa.jpg"
+		img: "/images/projects/tempa.jpg",
 	},
 	{
 		id: 12,
 		category: "Biometric-solutions",
 		model: "Biometric Solutions",
-		img: "/images/projects/Biometric-palm-1.jpg"
-	},
+		img: "/images/projects/Biometric-palm-1.jpg",
+	}, */
 ];
-
 
 export const blogs = [
 	{
 		id: 1,
-		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
-		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
-		img: "/images/img-news-ddt.jpg"
+		title:
+			" Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details:
+			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-ddt.jpg",
 	},
 	{
 		id: 2,
-		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
-		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
-		img: "/images/img-news-mintdata30.jpg"
+		title:
+			" Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details:
+			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-mintdata30.jpg",
 	},
 	{
 		id: 3,
-		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
-		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
-		img: "/images/img-news-03.jpg"
+		title:
+			" Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details:
+			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-03.jpg",
 	},
 ];
-
 
 export const blogse = [
 	{
 		id: 1,
-		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
-		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
-		img: "/images/img-news-ddt.jpg"
+		title:
+			" Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details:
+			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-ddt.jpg",
 	},
 	{
 		id: 2,
-		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
-		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
-		img: "/images/img-news-mintdata30.jpg"
+		title:
+			" Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details:
+			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-mintdata30.jpg",
 	},
 	{
 		id: 3,
-		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
-		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
-		img: "/images/img-news-03.jpg"
+		title:
+			" Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details:
+			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-03.jpg",
 	},
 	{
 		id: 4,
-		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
-		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
-		img: "/images/img-news-ddt.jpg"
+		title:
+			" Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details:
+			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-ddt.jpg",
 	},
 	{
 		id: 5,
-		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
-		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
-		img: "/images/img-news-mintdata30.jpg"
+		title:
+			" Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details:
+			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-mintdata30.jpg",
 	},
 	{
 		id: 6,
-		title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
-		details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
-		img: "/images/img-news-03.jpg"
+		title:
+			" Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ",
+		details:
+			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia sit velit numquam, commodi veritatis, ea quos reprehenderit libero ex, odio ut a facere molestias",
+		img: "/images/img-news-03.jpg",
 	},
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 export const exploreCard = [
 	{
@@ -647,5 +677,3 @@ export const productsData = [
 		Featimg: "/assets/Banner.png",
 	},
 ];
-
-
