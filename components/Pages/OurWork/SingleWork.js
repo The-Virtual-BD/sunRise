@@ -14,26 +14,26 @@ const SingleWork = () => {
 
 	return (
 		<div>
-			<SingleWorkBanner model={project.model} category={project.category} />
-			<div className="bg-[#F8FAFB] ">
-				<div className="max-w-7xl mx-auto py-10">
-					<div className="w-96">
+			<SingleWorkBanner model={project?.model} category={project?.category} />
+			<div className="bg-[#F8FAFB] text-darkBg">
+				<div className="max-w-7xl mx-auto py-10 ">
+					<div className="w-1/2">
 						<Image
-							src={project.img}
-							alt={project.model}
+							src={project?.img}
+							alt={project?.model}
 							layout="responsive"
 							width={100}
 							height={100}
 						/>
 					</div>
 					<div className="mt-5">
-						<p className="font-bold"> Name: {project.model}</p>
-						<p>Wing Span: {project.WingSpan}</p>
-						<p>Take off Weight: {project.TakeoffWeight}</p>
-						<p>Payload: {project.Payload}</p>
-						<p>Endurance: {project.Endurance}</p>
-						<p>Flight Speed: {project.FlightSpeed}</p>
-						<p>Flight Altitude: {project.FlightAltitude}</p>
+						<p className="font-bold"> Name: {project?.model}</p>
+						<p>Wing Span: {project?.WingSpan}</p>
+						<p>Take off Weight: {project?.TakeoffWeight}</p>
+						<p>Payload: {project?.Payload}</p>
+						<p>Endurance: {project?.Endurance}</p>
+						<p>Flight Speed: {project?.FlightSpeed}</p>
+						<p>Flight Altitude: {project?.FlightAltitude}</p>
 					</div>
 				</div>
 			</div>
