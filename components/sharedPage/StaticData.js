@@ -511,7 +511,7 @@ export const blogse = [
 
 
 
-/* export const exploreCard = [
+export const exploreCard = [
 	{
 		id: 1,
 		name: "Solution",
@@ -679,4 +679,4 @@ export const productsData = [
 		img: "/assets/research2.png",
 		Featimg: "/assets/Banner.png",
 	},
-]; */
+];
