@@ -1,16 +1,18 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { OurProjects } from "../../sharedPage/StaticData";
 
 const SingleWork = () => {
 	const router = useRouter();
 	const { id } = router.query;
-	console.log(id);
+	const [project, setProject] = useState({});
+	// console.log(id);
 
-	const project = OurProjects?.find((pro) => pro.id == id);
-
-	
+	useEffect(() => {
+		const project = OurProjects?.find((pro) => pro.id == id);
+		setProject(project);
+	}, [id]);
 
 	return (
 		<div>
