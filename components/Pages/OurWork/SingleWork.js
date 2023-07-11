@@ -6,13 +6,17 @@ import { OurProjects } from "../../sharedPage/StaticData";
 const SingleWork = () => {
 	const router = useRouter();
 	const { id } = router.query;
-	const [project, setProject] = useState({});
+	const [project, setProject] = useState(null);
 	// console.log(id);
 
 	useEffect(() => {
 		const project = OurProjects?.find((pro) => pro.id == id);
 		setProject(project);
 	}, [id]);
+
+	if (!project) {
+		return null; // or show a loading spinner/message while project is being fetched
+	}
 
 	return (
 		<div>
