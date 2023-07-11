@@ -16,7 +16,7 @@ const SingleWork = () => {
 
 	return (
 		<div>
-			<SingleWorkBanner model={project?.model} category={project?.category} />
+			<SingleWorkBanner project={project} />
 			<div className="bg-[#F8FAFB] text-darkBg">
 				<div className="max-w-7xl mx-auto py-10 ">
 					<div className="w-1/2">
@@ -45,7 +45,7 @@ const SingleWork = () => {
 
 export default SingleWork;
 
-const SingleWorkBanner = ({ model, category }) => {
+const SingleWorkBanner = ({ project }) => {
 	return (
 		<div>
 			<div
@@ -58,10 +58,10 @@ const SingleWorkBanner = ({ model, category }) => {
 				<div className=" ">
 					<div className="text-start mb-10 px-5 lg:px-24 ">
 						<div className="flex items-center justify-start ">
-							<h1 className="why-header-design">{model}</h1>
+							<h1 className="why-header-design">{project?.model}</h1>
 						</div>
 						<h1 className="text-2xl lg:text-5xl font-bold max-w-5xl my-2">
-							{category}
+							{project?.category}
 						</h1>
 					</div>
 				</div>
