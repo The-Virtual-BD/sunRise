@@ -22,7 +22,7 @@ const Navbar = () => {
 			subMenuItems: [
 				{ name: "About Us", path: "/about-us" },
 				{ name: "News", path: "/latest-news" },
-				{ name: "Contact Us", path: "/contacts" },
+				// { name: "Contact Us", path: "" },
 				{ name: "Goal Tracker", path: "/goal-tracker" },
 			],
 		},
@@ -48,8 +48,8 @@ const Navbar = () => {
 	return (
 		<div>
 			<div
-				className={`bg-[#ffff] text-darkBg w-full fixed z-50 ease-in duration-300 ${
-					navbarTop ? " bg-opacity-100 lg:bg-opacity-0" : "bg-opacity-100"
+				className={`bg-[#ffffff] text-darkBg w-full fixed z-50 ease-in duration-300 ${
+					navbarTop ? " bg-opacity-100 lg:bg-opacity-50" : "bg-opacity-100"
 				}`}
 			>
 				<header className="flex items-center justify-between max-w-7xl mx-auto py-1.5 ">
@@ -116,9 +116,11 @@ const Navbar = () => {
 						</ul>
 					</nav>
 
-					<button className="bg-primary rounded-sm hidden lg:block text-darkBg px-5 lg:px-6 py-1.5 lg:py-2 font-bold text-lg lg:text-xl">
-						Get in touch
-					</button>
+					<Link href={"/contacts"}>
+						<button className="bg-primary rounded-sm hidden lg:block text-darkBg px-5 lg:px-6 py-1.5 lg:py-2 font-bold text-lg lg:text-xl">
+							Get in touch
+						</button>
+					</Link>
 				</header>
 
 				{open && (
@@ -177,10 +179,11 @@ const Navbar = () => {
 										)}
 									</li>
 								))}
-
-								<button className="bg-primary rounded-sm text-darkBg px-5 lg:px-6 py-1.5 lg:py-2 font-bold text-lg lg:text-xl w-full mt-4">
-									Get in touch
-								</button>
+								<Link href={"/contacts"}>
+									<button className="bg-primary rounded-sm text-darkBg px-5 lg:px-6 py-1.5 lg:py-2 font-bold text-lg lg:text-xl w-full mt-4">
+										Get in touch
+									</button>
+								</Link>
 							</ul>
 						</nav>
 					</div>

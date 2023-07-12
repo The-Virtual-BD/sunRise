@@ -35,13 +35,13 @@ const ContactBanner = () => {
 					<div className=" w-full bg-transparent  lg:bg-white text-white  lg:text-darkBg h-auto lg:h-[600px] ">
 						<div className="pt-14 px-5 relative ">
 							<h1 className="text-2xl lg:text-5xl font-bold my-2">
-								Our offices
+								Our Head office
 							</h1>
 
 							<div className="relative top-32">
 								<div className="flex justify-between items-start gap-5">
 									<div>
-										<h3 className="text-2xl font-semibold">The Bahamas</h3>
+										<h3 className="text-2xl font-semibold">SunRise</h3>
 										<p className="text-sm lg:text-base flex items-center gap-1 mt-2">
 											<FaLocationArrow className="text-xl" />
 											<span>
@@ -91,8 +91,11 @@ const ContactLocation = () => {
 		<div className="h-auto  bg-[#F0F4F7] ">
 			<div className="max-w-7xl mx-auto px-5 lg:px-0 mt-40 lg:mt-0 py-20 lg:py-48">
 				<div>
-					<div className="flex flex-col lg:flex-row items-center justify-between bg-white shadow-sm mt-8  mb-10 border-l-4 border-l-darkgreen ">
-						<div className="w-full lg:w-1/2 h-full flex  items-center justify-between gap-2  ">
+					<div className="flex flex-col lg:flex-row items-start justify-between bg-white shadow-sm mt-5  mb-10 border-l-4 border-l-darkgreen ">
+						<div className="w-full lg:w-1/2 h-full  gap-2  ">
+							<h1 className="text-2xl lg:text-4xl font-bold  p-5">
+								Our Affiliate office
+							</h1>
 							<div className="p-5">
 								<h3 className="text-2xl font-semibold">The Virtual BD</h3>
 
