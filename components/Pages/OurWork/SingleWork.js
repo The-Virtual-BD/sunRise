@@ -23,7 +23,7 @@ const SingleWork = () => {
 			<SingleWorkBanner project={project} />
 			<div className="bg-[#F8FAFB] text-darkBg px-5 lg:px-0">
 				<div className="max-w-7xl mx-auto py-10 ">
-					<div className="w-full lg:w-1/2 ">
+					<div className="w-full lg:w-1/2 mx-auto">
 						<Image
 							src={project?.img}
 							alt={project?.model}
@@ -32,7 +32,7 @@ const SingleWork = () => {
 							height={100}
 						/>
 					</div>
-					<div className="mt-5 flex items-start gap-6 ">
+					<div className="mt-5 flex items-start justify-center gap-6 ">
 						<div>
 							<p className="font-bold">Model Name:</p>
 							<p>Category:</p>

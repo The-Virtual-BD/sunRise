@@ -48,8 +48,8 @@ const Navbar = () => {
 	return (
 		<div>
 			<div
-				className={`bg-[#ffffff] text-darkBg w-full fixed z-50 ease-in duration-300 ${
-					navbarTop ? " bg-opacity-100 lg:bg-opacity-50" : "bg-opacity-100"
+				className={`bg-[#ffffff] text-white w-full fixed z-50 ease-in duration-300 ${
+					navbarTop ? " bg-opacity-100 lg:bg-opacity-70" : "bg-opacity-100"
 				}`}
 			>
 				<header className="flex items-center justify-between max-w-7xl mx-auto py-1.5 ">
