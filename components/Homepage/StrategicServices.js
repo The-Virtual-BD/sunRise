@@ -92,7 +92,7 @@ const StrategicServices = () => {
 
                 <div className='flex items-center justify-center'>
                     <button className="bg-green-500 hover:bg-green-700 rounded-sm text-white px-6 lg:px-10 py-1.5 lg:py-3 text-bold text-lg lg:text-2xl mt-10">
-                        <Link href={"/"} className='flex items-center gap-1'>
+                        <Link href={"/services"} className='flex items-center gap-1'>
                             <span>All services</span> <BsArrowRight />
                         </Link>
                     </button>

@@ -55,7 +55,7 @@ const RecentBlog = () => {
 				</div>
 				<div className="w-full lg:w-1/2 h-full lg:min-h-[500px] flex flex-col justify-between gap-3">
 					<div>
-						<span className="bg-[#d6cfcf] text-darkBg rounded-full py-1.5 px-3 ">
+						<span className="bg-[#F0F3F6] text-darkBg rounded-full py-1.5 px-3 ">
 							Laravel
 						</span>
 						<h3 className="text-2xl font-semibold my-2">What is a Laravel?3</h3>
@@ -104,7 +104,7 @@ const LatestNews = () => {
 								className="rounded-t-md h-[300px] w-full"
 							/>
 							<div className="p-4">
-								<span className="bg-[#f7ecec] text-darkBg rounded-full py-1.5 px-3 ">
+								<span className="bg-[#F0F3F6] text-darkBg rounded-full py-1.5 px-3 ">
 									{blog.blogCategory}
 								</span>
 								<h2 className="text-xl lg:text-2xl font-bold text-darkBg hover:text-secondary cursor-pointer my-2 ">

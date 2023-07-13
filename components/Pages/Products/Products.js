@@ -17,8 +17,7 @@ const ProductBanner = () => {
 	return (
 		<div
 			style={{
-				backgroundImage: ` url("/images/bg-top-product.jpg")`,
-				
+				backgroundImage: `url("/images/bg-top-product.jpg")`,
 			}}
 			className="  text-white flex items-center top-header-bg"
 		>

@@ -27,7 +27,7 @@ const Blogs = () => {
 										className="rounded-t-md h-[300px] w-full"
 									/>
 									<div className="p-4">
-										<span className="bg-[#f7ecec] text-darkBg rounded-full py-1.5 px-3 ">
+										<span className="bg-[#F0F3F6] text-darkBg rounded-full py-1.5 px-3 ">
 											{blog.blogCategory}
 										</span>
 										<h2 className="text-xl lg:text-2xl font-bold text-darkBg hover:text-secondary cursor-pointer my-2 ">
