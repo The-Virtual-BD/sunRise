@@ -476,7 +476,7 @@ export const OurProjects = [
 	},
 ];
 
-export const blogs = [
+/* export const blogs = [
 	{
 		id: 1,
 		title:
@@ -779,7 +779,7 @@ export const ourBlog = [
 		bloggerName: "IshtiuqAhmedChowhdhury",
 		blogDate: "September 4, 2022",
 	},
-];
+]; */
 
 export const ourBlogs = [
 	{
