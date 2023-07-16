@@ -19,11 +19,11 @@ const Implementation = () => {
                             <h2 className='text-xl lg:text-2xl font-bold text-darkBg my-4 '>{impl.title}</h2>
                             <p className='text-sm lg:text-base mb-4'>{impl.details}</p>
 
-                            {
+                           {/*  {
                                 impl.link && <Link href={"/"} className='flex items-center gap-1 text-secondary font-bold text-sm lg:text-xl'>
                                     <BsArrowRight /> <span>{impl.link}</span>
                                 </Link>
-                            }
+                            } */}
                         </div>)
                     }
                 </div>

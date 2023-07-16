@@ -36,7 +36,7 @@ const Blogs = () => {
 										<p className="text-sm lg:text-base">{blog.blogSubTitle}</p>
 									</div>
 
-									<div className="flex items-center gap-3 p-4">
+									{/* <div className="flex items-center gap-3 p-4">
 										<Image
 											src={blog.bloggerImg}
 											width={40}
@@ -50,7 +50,7 @@ const Blogs = () => {
 											</h3>
 											<p className="text-sm">{blog.blogTime}</p>
 										</div>
-									</div>
+									</div> */}
 								</div>
 							))
 							.slice(0, 3)}

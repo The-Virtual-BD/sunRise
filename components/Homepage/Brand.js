@@ -61,7 +61,7 @@ export default Brand;
 const BrandCard = ({ img }) => {
 	return (
 		<div > 
-			<Image className="mx-10" src={img} width={100} height={30} alt="" />
+			<Image className="mx-10" src={img} width={100} height={80} alt="" />
 		</div>
 	);
 };

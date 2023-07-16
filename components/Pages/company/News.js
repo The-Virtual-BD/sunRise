@@ -67,7 +67,7 @@ const RecentBlog = () => {
 						</p>
 					</div>
 
-					<div className="flex items-center gap-3">
+					{/* <div className="flex items-center gap-3">
 						<Image
 							src={"/images/img-photo-Brad-Garlinghouse.jpg"}
 							width={50}
@@ -79,7 +79,7 @@ const RecentBlog = () => {
 							<h3 className="font-bold text-xl">John Dean</h3>
 							<p>09 April, 2023</p>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>
@@ -96,7 +96,7 @@ const LatestNews = () => {
 					{ourBlogs.map((blog) => (
 						<div
 							key={blog.id}
-							className="bg-white rounded-md shadow-sm hover:shadow-xl "
+							className="bg-white rounded-md shadow-sm hover:shadow-xl cursor-pointer"
 						>
 							<img
 								src={blog.blogImg}
@@ -113,7 +113,7 @@ const LatestNews = () => {
 								<p className="text-sm lg:text-base">{blog.blogSubTitle}</p>
 							</div>
 
-							<div className="flex items-center gap-3 p-4">
+							{/* <div className="flex items-center gap-3 p-4">
 								<Image
 									src={blog.bloggerImg}
 									width={40}
@@ -127,7 +127,7 @@ const LatestNews = () => {
 									</h3>
 									<p className="text-sm">{blog.blogTime}</p>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					))}
 				</div>
