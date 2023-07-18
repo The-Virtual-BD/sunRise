@@ -4,8 +4,7 @@ const Faqs = () => {
     return (
         <section className=' bg-[#F0F3F6] text-darkBg  px-5'>
             <div className='w-full lg:max-w-7xl mx-auto  py-10'>
-                {/* <h2 className='text-3xl lg:text-6xl text-center font-bold text-darkBg font-family mb-2'>Have Any Questions?</h2>
-                <p className="mb-10  text-center text-base lg:text-lg">Get a quick tour at our FAQs. If you have more questions, text us. We will get to you as soon as possible</p> */}
+               
 
                 <div className='flex flex-col lg:flex-row items-center justify-between gap-5 text-darkBg'>
                     <div className='w-full text-sm lg:text-base'>
