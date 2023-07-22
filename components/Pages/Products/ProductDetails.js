@@ -18,6 +18,7 @@ const ProductDetails = () => {
 	if (!sinWork) {
 		return null;
 	};
+	
     return (
         <div>
 			<SingleWorkBanner sinWork={sinWork} />

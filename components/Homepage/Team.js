@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import { useCollection } from "../Context/Context";
 import { baseURL } from "../../url";
+import { useRouter } from "next/router";
 
 const Team = () => {
 	const { team, teamLoading } = useCollection();
@@ -43,10 +44,15 @@ const Team = () => {
 export default Team;
 
 const MemberCard = ({ team }) => {
-	const { memberName, memberImg, memberDesi } = team;
+	const router = useRouter();
+	const {_id, memberName, memberImg, memberDesi } = team;
+	const handleMemberPage = (id) => {
+		router.push(`our-team/${id}`);
+	};
+
 	return (
 		<div>
-			<div className="team_card ">
+			<div className="team_card "  onClick={()=>handleMemberPage(_id)}>
 				<div className="team_img">
 					<img src={`${baseURL}/${memberImg}`} alt={memberName} />
 				</div>
