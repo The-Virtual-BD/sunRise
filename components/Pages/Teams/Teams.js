@@ -4,37 +4,37 @@ import { baseURL } from "../../../url";
 import { useRouter } from "next/router";
 
 const Teams = () => {
-	const { team, teamLoading } = useCollection();
-
-	if (teamLoading) {
-		return <p className="text-center text-lg">Loading...</p>;
-	};
-	// console.log(team);
-
-	if (!teamLoading && team.length === 0) {
-		return <p className="text-center text-lg">Empty Team</p>;
-	};
-
 	return (
 		<div className="bg-white">
 			<TeamBanner />
-
-			<div className="text-paraclr py-5 lg:py-14 px-5 ">
-				{/* <div className="max-w-7xl mx-auto">
-					<span className="header-design">Our Team Members</span>
-				</div> */}
-
-				<div className="grid grid-cols-1 lg:grid-cols-4 gap-20 lg:gap-10 mt-20 mb-20  max-w-7xl mx-auto">
-					{team?.map((team) => (
-						<MemberCard key={team._id} team={team} />
-					))}
-				</div>
-			</div>
+			<TeamData />
 		</div>
 	);
 };
 
 export default Teams;
+
+const TeamData = () => {
+	const { team, teamLoading } = useCollection();
+
+	if (teamLoading) {
+		return <p className="text-center text-lg">Loading...</p>;
+	}
+	// console.log(team);
+
+	if (!teamLoading && team.length === 0) {
+		return <p className="text-center text-lg">Empty Team</p>;
+	}
+	return (
+		<div className="text-paraclr py-5 lg:py-14 px-5 ">
+			<div className="grid grid-cols-1 lg:grid-cols-4 gap-20 lg:gap-10 mt-20 mb-20  max-w-7xl mx-auto">
+				{team?.map((team) => (
+					<MemberCard key={team._id} team={team} />
+				))}
+			</div>
+		</div>
+	);
+};
 
 const MemberCard = ({ team }) => {
 	const router = useRouter();

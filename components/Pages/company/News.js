@@ -5,6 +5,16 @@ import { useCollection } from "../../Context/Context";
 import { useRouter } from "next/router";
 
 const News = () => {
+	return <div>
+		<NewsBanner />
+		<NewsData />
+
+	</div>;
+};
+
+export default News;
+
+const NewsData = () => {
 	const { news, newsLoading } = useCollection();
 
 	if (newsLoading) {
@@ -19,14 +29,12 @@ const News = () => {
 	// console.log(sortNews);
 	return (
 		<div className="bg-white">
-			<NewsBanner />
+			
 			<RecentBlog sortNews={sortNews} />
 			<LatestNews sortNews={sortNews} />
 		</div>
 	);
 };
-
-export default News;
 
 const NewsBanner = () => {
 	return (
