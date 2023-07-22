@@ -54,8 +54,8 @@ const Why = () => {
 				</div>
 			</div>
 
-			<div className="bg-darkBg pb-10 px-5 lg:px-0">
-				<div className="bg-[#F8F9FB]  flex flex-col lg:flex-row items-center justify-between gap-5  lg:max-w-7xl  mx-auto  relative top-24">
+			<div className="bg-darkBg  pb-10 px-5 lg:px-0">
+				<div className="bg-[#F8F9FB] text-darkBg  flex flex-col lg:flex-row items-center justify-between gap-5  lg:max-w-7xl  mx-auto  relative top-24">
 					<Image
 						src={"/images/why-us/bg-img-02.jpg"}
 						width={335}

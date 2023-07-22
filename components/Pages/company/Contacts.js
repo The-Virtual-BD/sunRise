@@ -88,7 +88,7 @@ const ContactBanner = () => {
 
 const ContactLocation = () => {
 	return (
-		<div className="h-auto  bg-[#F0F4F7] ">
+		<div className="h-auto  bg-[#F0F4F7] text-darkBg ">
 			<div className="max-w-7xl mx-auto px-5 lg:px-0 mt-40 lg:mt-0 py-20 lg:py-48">
 				<div>
 					<div className="flex flex-col lg:flex-row items-start justify-between bg-white shadow-sm mt-5  mb-10 border-l-4 border-l-darkgreen ">

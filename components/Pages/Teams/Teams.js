@@ -16,7 +16,7 @@ const Teams = () => {
 	};
 
 	return (
-		<div>
+		<div className="bg-white">
 			<TeamBanner />
 
 			<div className="text-paraclr py-5 lg:py-14 px-5 ">

@@ -18,7 +18,7 @@ const News = () => {
 
 	// console.log(sortNews);
 	return (
-		<div>
+		<div className="bg-white">
 			<NewsBanner />
 			<RecentBlog sortNews={sortNews} />
 			<LatestNews sortNews={sortNews} />
