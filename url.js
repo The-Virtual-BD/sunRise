@@ -1,1 +1,1 @@
-export const baseUrl = `https://smart-intro-server.onrender.com`
+export const baseURL = `https://server.ishtiuq.com`;

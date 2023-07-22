@@ -2,8 +2,17 @@ import React from 'react';
 import { teamMember } from '../sharedPage/StaticData';
 import Link from 'next/link';
 import { BsArrowRight } from 'react-icons/bs';
+import { useCollection } from '../Context/Context';
+import { baseURL } from '../../url';
 
 const Team = () => {
+    const {team,teamLoading}=useCollection();
+
+    if(teamLoading){
+        return <p>Loading...</p>
+    };
+    // console.log(team);
+
     return (
         <div className='text-paraclr py-20 px-5 '>
 
@@ -14,8 +23,8 @@ const Team = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-20 lg:gap-10 mt-20 mb-20  max-w-7xl mx-auto">
-                {teamMember.map((team) => (
-                    <MemberCard key={team.id} team={team} />
+                {team?.map((team) => (
+                    <MemberCard key={team._id} team={team} />
                 ))}
             </div>
 
@@ -34,43 +43,17 @@ export default Team;
 
 
 const MemberCard = ({ team }) => {
-    const { id, name, img, designation, linkedIn, github } = team;
+    const { memberName, memberImg, memberDesi} = team;
     return (
         <div>
             <div className="team_card ">
                 <div className="team_img">
-                    <img src={img} alt={name} />
+                    <img src={`${baseURL}/${memberImg}`} alt={memberName} />
                 </div>
 
                 <div className="team_info">
-                    <h2 className="font-semibold">{name}</h2>
-                    <p className="text-sm lg:text-base">{designation}</p>
-
-                    {/* <div className="team_social">
-						<div className="flex items-center gap-3 justify-center">
-							<div className="team_social_icon">
-								<Link href={"#"}>
-									<BsFacebook />
-								</Link>
-							</div>
-							<div className="team_social_icon">
-								<Link href={"#"}>
-									<BsTwitter />
-								</Link>
-							</div>
-							<div className="team_social_icon">
-								<Link href={"#"}>
-									<BsInstagram />
-								</Link>
-							</div>
-							<div className="team_social_icon">
-								<Link href={"#"}>
-									<BsLinkedin />
-								</Link>
-							</div>
-						</div>
-					</div> */}
-
+                    <h2 className="font-semibold">{memberName}</h2>
+                    <p className="text-sm lg:text-base">{memberDesi}</p>
                 </div>
             </div>
         </div>

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { OurProjects } from "../../sharedPage/StaticData";
 import { useRouter } from "next/router";
+import { useCollection } from "../../Context/Context";
+import { baseURL } from "../../../url";
 
 const Works = () => {
 	return (
@@ -27,18 +29,41 @@ const WorksBanner = () => {
 					<div className="flex items-center justify-start ">
 						<h1 className="why-header-design">Our Works</h1>
 					</div>
-					<h1 className="text-2xl lg:text-5xl font-bold max-w-5xl my-2">
-						Passionate & driven
-					</h1>
+					
 					<h3 className="text-lg lg:text-2xl font-semibold max-w-5xl pt-2 pb-5">
 						Areas of impact from our history of software development
 					</h3>
-					{/* <p className="bg-darkBg bg-opacity-50 px-3 py-7 rounded-md max-w-4xl text-sm lg:text-base mt-2">Our software development company architects, builds, and supports business-critical software systems. We partner with our customers to solve complex problems in software engineering and computer science, delivering meaningful impact and lasting value.</p> */}
+					
 				</div>
 			</div>
 		</div>
 	);
 };
+
+
+
+const WorksProjects = () => {
+	const {work,workLoading}=useCollection();
+
+    if(workLoading){
+        return <p>Loading...</p>
+    };
+    // console.log(work);
+
+	return (
+		<div className="bg-[#F8FAFB] py-10">
+			<div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-5 place-items-center  ">
+				{work?.map((work) => (
+					<div key={work._id}>
+						<ProjectCard project={work} />
+					</div>
+				))}
+			</div>
+		</div>
+	);
+};
+
+
 
 const ProjectCard = ({ project }) => {
 	const [hover, setHover] = useState(false);
@@ -61,28 +86,14 @@ const ProjectCard = ({ project }) => {
 			className={`snip1577 ${hover ? "hover" : ""} w-full shadow-xl `}
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
-			onClick={() => handleSingleWork(project.id)}
+			onClick={() => handleSingleWork(project._id)}
 		>
-			<img src={project.img} alt={project.model} className="w-full" />
+			<img src={`${baseURL}/${project.workImg}`} alt={project.workName} className="w-full" />
 			<figcaption>
-				<h3>{project.category}</h3>
-				<h4>{project.model}</h4>
+				<h3>{project.workCategory}</h3>
+				<h4>{project.workName}</h4>
 				{/* <h3><a href="#"> View Details</a></h3> */}
 			</figcaption>
 		</figure>
-	);
-};
-
-const WorksProjects = () => {
-	return (
-		<div className="bg-[#F8FAFB] py-10">
-			<div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-5 place-items-center  ">
-				{OurProjects.map((work) => (
-					<div key={work.id}>
-						<ProjectCard project={work} />
-					</div>
-				))}
-			</div>
-		</div>
 	);
 };
