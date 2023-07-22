@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { blogs, blogse, ourBlogs } from "../../sharedPage/StaticData";
 import { baseURL } from "../../../url";
 import { useCollection } from "../../Context/Context";
+import { useRouter } from "next/router";
 
 const News = () => {
 	const { news, newsLoading } = useCollection();
@@ -52,8 +52,13 @@ const NewsBanner = () => {
 };
 
 const RecentBlog = ({ sortNews }) => {
+	const router = useRouter();
 	const lastNews = sortNews[0];
 	// console.log(lastNews);
+
+	const handleNewsPage = (id) => {
+		router.push(`latest-news/${id}`);
+	};
 
 	return (
 		<div className="max-w-7xl mx-auto py-10 bg-white text-darkBg px-5 lg:px-0">
@@ -68,17 +73,20 @@ const RecentBlog = ({ sortNews }) => {
 				</div>
 				<div className="w-full lg:w-1/2 h-full lg:min-h-[500px] flex flex-col justify-between gap-3">
 					<div>
-						<span className="bg-[#F0F3F6] text-darkBg rounded-full py-1.5 px-3 ">
+						<span className="bg-[#F0F3F6] text-darkBg  rounded-full py-1.5 px-3 ">
 							{lastNews?.newsCategory}
 						</span>
-						<h3 className="text-2xl font-semibold my-2">
+						<h3
+							onClick={() => handleNewsPage(lastNews?._id)}
+							className="text-2xl font-semibold my-2 text-darkBg hover:text-darkgreen cursor-pointer"
+						>
 							{lastNews?.newsTitle}
 						</h3>
 
 						<div
 							className="text-labelclr text-sm lg:text-base"
 							dangerouslySetInnerHTML={{
-								__html: lastNews?.newsDesc.slice(0,500),
+								__html: lastNews?.newsDesc.slice(0, 500),
 							}}
 						/>
 					</div>
@@ -89,6 +97,12 @@ const RecentBlog = ({ sortNews }) => {
 };
 
 const LatestNews = ({ sortNews }) => {
+	const router = useRouter();
+
+	const handleNewsPage = (id) => {
+		router.push(`latest-news/${id}`);
+	};
+
 	return (
 		<div className="bg-[#F8FAFB] py-6">
 			<div className="max-w-7xl mx-auto text-darkBg">
@@ -98,7 +112,8 @@ const LatestNews = ({ sortNews }) => {
 					{sortNews.map((blog) => (
 						<div
 							key={blog._id}
-							className="bg-white rounded-md shadow-sm hover:shadow-xl h-[500px]"
+							onClick={() => handleNewsPage(blog._id)}
+							className="bg-white rounded-md shadow-sm hover:shadow-xl h-[500px] cursor-pointer"
 						>
 							<img
 								src={`${baseURL}/${blog.newsImg}`}
@@ -109,7 +124,7 @@ const LatestNews = ({ sortNews }) => {
 								<span className="bg-[#F0F3F6] text-darkBg rounded-full py-1.5 px-3 ">
 									{blog.newsCategory}
 								</span>
-								<h2 className="text-xl lg:text-2xl font-bold text-darkBg hover:text-secondary cursor-pointer mb-2 mt-1 ">
+								<h2 className="text-xl lg:text-2xl font-bold text-darkBg  mb-2 mt-1 ">
 									{blog.newsTitle}
 								</h2>
 

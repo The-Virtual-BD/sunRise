@@ -5,8 +5,10 @@ import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import { useCollection } from "../Context/Context";
 import { baseURL } from "../../url";
+import { useRouter } from "next/router";
 
 const Blogs = () => {
+	const router = useRouter();
 	const { news, newsLoading } = useCollection();
 
 	if (newsLoading) {
@@ -19,6 +21,10 @@ const Blogs = () => {
 	const sortNews = [...news].reverse();
 
 	// console.log(sortNews);
+
+	const handleNewsPage = (id) => {
+		router.push(`latest-news/${id}`);
+	};
 
 	return (
 		<div className="text-paraclr ">
@@ -34,6 +40,7 @@ const Blogs = () => {
 							.map((blog) => (
 								<div
 									key={blog._id}
+									onClick={() => handleNewsPage(blog._id)}
 									className="bg-white rounded-md shadow-sm hover:shadow-xl h-[500px]"
 								>
 									<img

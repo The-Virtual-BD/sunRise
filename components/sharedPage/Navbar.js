@@ -22,8 +22,7 @@ const Navbar = () => {
 			subMenuItems: [
 				{ name: "About Us", path: "/about-us" },
 				{ name: "News", path: "/latest-news" },
-				// { name: "Contact Us", path: "" },
-				{ name: "Goal Tracker", path: "/goal-tracker" },
+				{ name: "Our Team", path: "/our-team" },
 			],
 		},
 	];
