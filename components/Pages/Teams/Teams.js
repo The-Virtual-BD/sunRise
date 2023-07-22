@@ -46,7 +46,10 @@ const MemberCard = ({ team }) => {
 
 	return (
 		<div>
-			<div className="team_card shadow-lg" onClick={() => handleMemberPage(_id)}>
+			<div
+				className="team_card shadow-lg"
+				onClick={() => handleMemberPage(_id)}
+			>
 				<div className="team_img">
 					<img src={`${baseURL}/${memberImg}`} alt={memberName} />
 				</div>
@@ -59,8 +62,6 @@ const MemberCard = ({ team }) => {
 		</div>
 	);
 };
-
-
 
 const TeamBanner = () => {
 	return (
@@ -76,11 +77,10 @@ const TeamBanner = () => {
 					<div className="flex items-center justify-start ">
 						<h1 className="why-header-design">Our Dedicated Team</h1>
 					</div>
-					
+
 					<h3 className="text-lg lg:text-2xl font-semibold max-w-5xl pt-2 pb-5">
 						Areas of impact from our history of software development
 					</h3>
-					
 				</div>
 			</div>
 		</div>

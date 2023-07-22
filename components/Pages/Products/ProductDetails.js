@@ -1,9 +1,9 @@
-import { useRouter } from 'next/router';
-import React, { useEffect, useState } from 'react';
-import { baseURL } from '../../../url';
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
+import { baseURL } from "../../../url";
 
 const ProductDetails = () => {
-    const router = useRouter();
+	const router = useRouter();
 	const { id } = router.query;
 	const [sinWork, setSinWork] = useState({});
 
@@ -17,10 +17,10 @@ const ProductDetails = () => {
 
 	if (!sinWork) {
 		return null;
-	};
-	
-    return (
-        <div>
+	}
+
+	return (
+		<div>
 			<SingleWorkBanner sinWork={sinWork} />
 			<div className="bg-[#F8FAFB] text-darkBg px-5 lg:px-0">
 				<div className="max-w-7xl mx-auto py-10 ">
@@ -53,12 +53,10 @@ const ProductDetails = () => {
 				</div>
 			</div>
 		</div>
-    );
+	);
 };
 
 export default ProductDetails;
-
-
 
 const SingleWorkBanner = ({ sinWork }) => {
 	return (

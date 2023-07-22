@@ -1,9 +1,9 @@
-import { useRouter } from 'next/router';
-import React, { useEffect, useState } from 'react';
-import { baseURL } from '../../../url';
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
+import { baseURL } from "../../../url";
 
 const MemberDetails = () => {
-    const router = useRouter();
+	const router = useRouter();
 	const { id } = router.query;
 	const [sinMember, setSinMember] = useState({});
 
@@ -13,13 +13,13 @@ const MemberDetails = () => {
 			.then((data) => setSinMember(data));
 	}, [id]);
 
-	console.log(sinMember);
+	// console.log(sinMember);
 
 	if (!sinMember) {
 		return null;
 	};
-    return (
-        <div>
+	return (
+		<div>
 			<SingleWorkBanner sinMember={sinMember} />
 			<div className="bg-[#F8FAFB] text-darkBg px-5 lg:px-0">
 				<div className="max-w-7xl mx-auto py-10 ">
@@ -52,11 +52,10 @@ const MemberDetails = () => {
 				</div>
 			</div>
 		</div>
-    );
+	);
 };
 
 export default MemberDetails;
-
 
 const SingleWorkBanner = ({ sinMember }) => {
 	return (

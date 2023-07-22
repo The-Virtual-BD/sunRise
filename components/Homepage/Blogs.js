@@ -2,9 +2,24 @@ import React from "react";
 import { blogs, ourBlogs } from "../sharedPage/StaticData";
 import Image from "next/image";
 import Link from "next/link";
-import { BsArrowRight } from 'react-icons/bs';
+import { BsArrowRight } from "react-icons/bs";
+import { useCollection } from "../Context/Context";
+import { baseURL } from "../../url";
 
 const Blogs = () => {
+	const { news, newsLoading } = useCollection();
+
+	if (newsLoading) {
+		return <p className="text-center text-lg">Loading...</p>;
+	}
+
+	if (!newsLoading && news.length === 0) {
+		return <p className="text-center text-lg">No News Available</p>;
+	}
+	const sortNews = [...news].reverse();
+
+	// console.log(sortNews);
+
 	return (
 		<div className="text-paraclr ">
 			<div className="">
@@ -15,42 +30,33 @@ const Blogs = () => {
 				</div>
 				<div className="blog-content py-14">
 					<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 max-w-7xl mx-auto px-5">
-						{ourBlogs
+						{sortNews
 							.map((blog) => (
 								<div
-									key={blog.id}
-									className="bg-white rounded-md shadow-sm hover:shadow-xl "
+									key={blog._id}
+									className="bg-white rounded-md shadow-sm hover:shadow-xl h-[500px]"
 								>
 									<img
-										src={blog.blogImg}
-										alt={blog.blogCategory}
+										src={`${baseURL}/${blog.newsImg}`}
+										alt={blog.newsTitle}
 										className="rounded-t-md h-[300px] w-full"
 									/>
 									<div className="p-4">
 										<span className="bg-[#F0F3F6] text-darkBg rounded-full py-1.5 px-3 ">
-											{blog.blogCategory}
+											{blog.newsCategory}
 										</span>
 										<h2 className="text-xl lg:text-2xl font-bold text-darkBg hover:text-secondary cursor-pointer my-2 ">
-											{blog.blogTitle}
+											{blog.newsTitle}
 										</h2>
-										<p className="text-sm lg:text-base">{blog.blogSubTitle}</p>
-									</div>
 
-									{/* <div className="flex items-center gap-3 p-4">
-										<Image
-											src={blog.bloggerImg}
-											width={40}
-											height={40}
-											className="rounded-full"
-											alt=""
+										<div
+											className="text-labelclr text-sm lg:text-base"
+											dangerouslySetInnerHTML={{
+												__html: blog?.newsDesc.slice(0,156),
+											}}
+											
 										/>
-										<div>
-											<h3 className="font-bold text-base lg:text-lg">
-												{blog.bloggerName}
-											</h3>
-											<p className="text-sm">{blog.blogTime}</p>
-										</div>
-									</div> */}
+									</div>
 								</div>
 							))
 							.slice(0, 3)}
@@ -70,5 +76,3 @@ const Blogs = () => {
 };
 
 export default Blogs;
-
-

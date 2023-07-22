@@ -29,30 +29,27 @@ const WorksBanner = () => {
 					<div className="flex items-center justify-start ">
 						<h1 className="why-header-design">Our Works</h1>
 					</div>
-					
+
 					<h3 className="text-lg lg:text-2xl font-semibold max-w-5xl pt-2 pb-5">
 						Areas of impact from our history of software development
 					</h3>
-					
 				</div>
 			</div>
 		</div>
 	);
 };
 
-
-
 const WorksProjects = () => {
-	const {work,workLoading}=useCollection();
+	const { work, workLoading } = useCollection();
 
-    if(workLoading){
-        return <p  className="text-center text-lg">Loading...</p>
-    };
-    // console.log(work);
+	if (workLoading) {
+		return <p className="text-center text-lg">Loading...</p>;
+	}
+	// console.log(work);
 
-	if(!workLoading && work.length===0){
-		return <p className="text-center text-lg">Empty Work</p>
-	};
+	if (!workLoading && work.length === 0) {
+		return <p className="text-center text-lg">Empty Work</p>;
+	}
 
 	return (
 		<div className="bg-[#F8FAFB] py-10">
@@ -66,8 +63,6 @@ const WorksProjects = () => {
 		</div>
 	);
 };
-
-
 
 const ProjectCard = ({ project }) => {
 	const [hover, setHover] = useState(false);
@@ -92,7 +87,11 @@ const ProjectCard = ({ project }) => {
 			onMouseLeave={handleMouseLeave}
 			onClick={() => handleSingleWork(project._id)}
 		>
-			<img src={`${baseURL}/${project.workImg}`} alt={project.workName} className="w-full" />
+			<img
+				src={`${baseURL}/${project.workImg}`}
+				alt={project.workName}
+				className="w-full"
+			/>
 			<figcaption>
 				<h3>{project.workCategory}</h3>
 				<h4>{project.workName}</h4>

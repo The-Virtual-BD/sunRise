@@ -1,14 +1,27 @@
 import Image from "next/image";
 import React from "react";
 import { blogs, blogse, ourBlogs } from "../../sharedPage/StaticData";
+import { baseURL } from "../../../url";
+import { useCollection } from "../../Context/Context";
 
 const News = () => {
+	const { news, newsLoading } = useCollection();
+
+	if (newsLoading) {
+		return <p className="text-center text-lg">Loading...</p>;
+	}
+
+	if (!newsLoading && news.length === 0) {
+		return <p className="text-center text-lg">No News Available</p>;
+	}
+	const sortNews = [...news].reverse();
+
+	// console.log(sortNews);
 	return (
 		<div>
 			<NewsBanner />
-			<RecentBlog />
-
-			<LatestNews />
+			<RecentBlog sortNews={sortNews} />
+			<LatestNews sortNews={sortNews} />
 		</div>
 	);
 };
@@ -38,96 +51,75 @@ const NewsBanner = () => {
 	);
 };
 
-const RecentBlog = () => {
+const RecentBlog = ({ sortNews }) => {
+	const lastNews = sortNews[0];
+	// console.log(lastNews);
+
 	return (
 		<div className="max-w-7xl mx-auto py-10 bg-white text-darkBg px-5 lg:px-0">
 			<h2 className="font-bold tracking-wide text-xl">WHATS NEW</h2>
 			<div className="flex flex-col lg:flex-row items-start gap-4">
 				<div className="w-full lg:w-1/2">
-					<Image
-						src={"/images/bg-si-02.jpg"}
-						layout="responsive"
-						width={100}
-						height={100}
-						alt=""
-						style={{ width: "100%", maxHeight: "500px" }}
+					<img
+						src={`${baseURL}/${lastNews?.newsImg}`}
+						alt={lastNews?.newsTitle}
+						className="h-[500px] w-full"
 					/>
 				</div>
 				<div className="w-full lg:w-1/2 h-full lg:min-h-[500px] flex flex-col justify-between gap-3">
 					<div>
 						<span className="bg-[#F0F3F6] text-darkBg rounded-full py-1.5 px-3 ">
-							Laravel
+							{lastNews?.newsCategory}
 						</span>
-						<h3 className="text-2xl font-semibold my-2">What is a Laravel?3</h3>
-						<p className="text-lg ">
-							Adobe Photoshop is a graphics editing software developed and
-							published by Adobe Inc. It was first released in February 1990,
-							and has since become one of the most popular and widely-used image
-							editing applications in the world.
-						</p>
-					</div>
+						<h3 className="text-2xl font-semibold my-2">
+							{lastNews?.newsTitle}
+						</h3>
 
-					{/* <div className="flex items-center gap-3">
-						<Image
-							src={"/images/img-photo-Brad-Garlinghouse.jpg"}
-							width={50}
-							height={50}
-							className="rounded-full"
-							alt=""
+						<div
+							className="text-labelclr text-sm lg:text-base"
+							dangerouslySetInnerHTML={{
+								__html: lastNews?.newsDesc.slice(0,500),
+							}}
 						/>
-						<div>
-							<h3 className="font-bold text-xl">John Dean</h3>
-							<p>09 April, 2023</p>
-						</div>
-					</div> */}
+					</div>
 				</div>
 			</div>
 		</div>
 	);
 };
 
-const LatestNews = () => {
+const LatestNews = ({ sortNews }) => {
 	return (
 		<div className="bg-[#F8FAFB] py-6">
 			<div className="max-w-7xl mx-auto text-darkBg">
 				<h2 className="font-bold tracking-wide text-xl">PREVIOUS POST</h2>
 
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-5  px-5 lg:px-0 place-items-center mt-3">
-					{ourBlogs.map((blog) => (
+					{sortNews.map((blog) => (
 						<div
-							key={blog.id}
-							className="bg-white rounded-md shadow-sm hover:shadow-xl cursor-pointer"
+							key={blog._id}
+							className="bg-white rounded-md shadow-sm hover:shadow-xl h-[500px]"
 						>
 							<img
-								src={blog.blogImg}
-								alt={blog.blogCategory}
+								src={`${baseURL}/${blog.newsImg}`}
+								alt={blog.newsTitle}
 								className="rounded-t-md h-[300px] w-full"
 							/>
 							<div className="p-4">
 								<span className="bg-[#F0F3F6] text-darkBg rounded-full py-1.5 px-3 ">
-									{blog.blogCategory}
+									{blog.newsCategory}
 								</span>
-								<h2 className="text-xl lg:text-2xl font-bold text-darkBg hover:text-secondary cursor-pointer my-2 ">
-									{blog.blogTitle}
+								<h2 className="text-xl lg:text-2xl font-bold text-darkBg hover:text-secondary cursor-pointer mb-2 mt-1 ">
+									{blog.newsTitle}
 								</h2>
-								<p className="text-sm lg:text-base">{blog.blogSubTitle}</p>
-							</div>
 
-							{/* <div className="flex items-center gap-3 p-4">
-								<Image
-									src={blog.bloggerImg}
-									width={40}
-									height={40}
-									className="rounded-full"
-									alt=""
+								<div
+									className="text-labelclr text-sm lg:text-base"
+									dangerouslySetInnerHTML={{
+										__html: blog?.newsDesc.slice(0, 150),
+									}}
 								/>
-								<div>
-									<h3 className="font-bold text-base lg:text-lg">
-										{blog.bloggerName}
-									</h3>
-									<p className="text-sm">{blog.blogTime}</p>
-								</div>
-							</div> */}
+							</div>
 						</div>
 					))}
 				</div>
