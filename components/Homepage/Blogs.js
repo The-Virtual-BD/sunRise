@@ -17,7 +17,7 @@ const Blogs = () => {
 
 	if (!newsLoading && news.length === 0) {
 		return <p className="text-center text-lg">No News Available</p>;
-	}
+	};
 	const sortNews = [...news].reverse();
 
 	// console.log(sortNews);
