@@ -46,9 +46,13 @@ const WorksProjects = () => {
 	const {work,workLoading}=useCollection();
 
     if(workLoading){
-        return <p>Loading...</p>
+        return <p  className="text-center text-lg">Loading...</p>
     };
     // console.log(work);
+
+	if(!workLoading && work.length===0){
+		return <p className="text-center text-lg">Empty Work</p>
+	};
 
 	return (
 		<div className="bg-[#F8FAFB] py-10">

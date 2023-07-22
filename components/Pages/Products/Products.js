@@ -44,10 +44,14 @@ const WorksProjects = () => {
 	const {products,productsLoading}=useCollection();
 
     if(productsLoading){
-        return <p>Loading...</p>
+        return <p className="text-center text-lg">Loading...</p>
     };
 
-    console.log(products);
+	if(!productsLoading && products.length===0){
+		return <p  className="text-center text-lg">Empty Products</p>
+	};
+
+    // console.log(products);
 	return (
 		<div className="bg-[#F8FAFB] py-10">
 			<div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-5 place-items-center  ">

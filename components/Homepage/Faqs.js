@@ -4,8 +4,12 @@ import { useCollection } from "../Context/Context";
 const Faqs = () => {
     const {faqs,faqLoading}=useCollection();
     if(faqLoading){
-        return <p>Loading...</p>
+        return <p  className="text-center text-lg">Loading...</p>
     };
+	
+	if(!faqLoading && faqs.length===0){
+		return <p  className="text-center text-lg">Empty FAQs</p>
+	};
 
     // console.log(faqs)
 

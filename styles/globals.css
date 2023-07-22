@@ -507,3 +507,11 @@ nav.stroke ul li a:hover:after {
 	}
 
 }
+
+
+.brand-img{
+	height: 80px;
+	width: 100%;
+	padding: 10px 40px;
+	
+}

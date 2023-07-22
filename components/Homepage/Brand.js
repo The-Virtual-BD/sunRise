@@ -2,6 +2,8 @@ import React from "react";
 import verizon from "../../public/images/Brand/logo-verizon.svg";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { useCollection } from "../Context/Context";
+import { baseURL } from "../../url";
 
 const brandImg = [
 	{
@@ -43,12 +45,26 @@ const brandImg = [
 ];
 
 const Brand = () => {
+	const { brands, brandLoading } = useCollection();
+
+	if (brandLoading) {
+		return <p>Loading...</p>;
+	};
+
+	if(!brandLoading && brands.length===0){
+		return <p>Empty Brand</p>
+	};
+	// console.log(brands);
+
 	return (
-		<div className="bg-white  border-[1px] border-gray-300 h-20 overflow-hidden">
+		<div className="bg-white  overflow-hidden">
 			<div className=" flex items-center justify-center">
-				<Marquee  speed={50} className="w-full h-20  flex items-center justify-center">
-					{brandImg.map((data) => (
-						<BrandCard key={data.id} img={data.img} />
+				<Marquee
+					speed={50}
+					className="w-full   flex items-center justify-center"
+				>
+					{brands?.map((data) => (
+						<BrandCard key={data._id} data={data} />
 					))}
 				</Marquee>
 			</div>
@@ -58,10 +74,14 @@ const Brand = () => {
 
 export default Brand;
 
-const BrandCard = ({ img }) => {
+const BrandCard = ({ data }) => {
 	return (
-		<div > 
-			<Image className="mx-10" src={img} width={100} height={80} alt="" />
+		<div>
+			<img
+				src={`${baseURL}/${data?.brandImg}`}
+				alt={data?.brandName}
+				className="brand-img"
+			/>
 		</div>
 	);
 };
