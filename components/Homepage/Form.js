@@ -14,8 +14,8 @@ const Form = () => {
 
 	const handleContactForm = (e) => {
 		e.preventDefault();
-        
-        const cratedAt = new Date();
+
+		const cratedAt = new Date();
 		const data = { msg, name, email, phone, cratedAt };
 
 		try {
@@ -86,10 +86,12 @@ const Form = () => {
 
 					<div className="flex items-center justify-center">
 						<button
+							disabled={submitting}
 							type="submit"
 							className="bg-yellow-500 hover:bg-yellow-400 rounded-sm text-black  px-6 lg:px-10 py-1.5 lg:py-3 font-semibold text-lg lg:text-2xl mt-10 flex items-center gap-1"
 						>
-							<span> Send</span> <BsArrowRight />
+							<span>{submitting ? "Sending..." : "Send"} </span>{" "}
+							<BsArrowRight />
 						</button>
 					</div>
 				</form>
