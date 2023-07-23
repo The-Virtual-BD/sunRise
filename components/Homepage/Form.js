@@ -14,7 +14,9 @@ const Form = () => {
 
 	const handleContactForm = (e) => {
 		e.preventDefault();
-		const data = { msg, name, email, phone };
+        
+        const cratedAt = new Date();
+		const data = { msg, name, email, phone, cratedAt };
 
 		try {
 			// console.log(data);
@@ -54,14 +56,14 @@ const Form = () => {
 
 				<form onSubmit={handleContactForm} className="text-base lg:text-xl">
 					<textarea
-                    onChange={(e)=>setMsg(e.target.value)}
+						onChange={(e) => setMsg(e.target.value)}
 						className="textarea textarea-accent w-full h-40 border-0 mb-4 bg-formclr"
 						placeholder="Project description*"
 					></textarea>
 
 					<input
 						type="text"
-                        onChange={(e)=>setName(e.target.value)}
+						onChange={(e) => setName(e.target.value)}
 						placeholder="Name*"
 						className="input  input-accent w-full mb-4 border-0 bg-formclr"
 					/>
@@ -69,14 +71,14 @@ const Form = () => {
 					<div className="flex flex-col lg:flex-row items-center gap-2 mb-4">
 						<input
 							type="email"
-                            onChange={(e)=>setEmail(e.target.value)}
+							onChange={(e) => setEmail(e.target.value)}
 							placeholder="Email*"
 							className="input  input-accent w-full border-0 bg-formclr"
 						/>
 
 						<input
 							type="tel"
-                            onChange={(e)=>setPhone(e.target.value)}
+							onChange={(e) => setPhone(e.target.value)}
 							placeholder="Phone (optional)"
 							className="input input-accent w-full border-0 bg-formclr"
 						/>
