@@ -4,15 +4,15 @@ import { BsArrowRight } from "react-icons/bs";
 
 const StrategicServices = () => {
 	return (
-		<div className="text-paraclr py-20 px-5 ">
+		<div className="text-paraclr py-20 px-5 bg-[#F8FAFB]">
 			<div className="max-w-7xl mx-auto">
 				<span className="header-design">Our IT Services</span>
 
 				<p className="max-w-3xl ml-1 lg:ml-5 text-sm lg:text-lg  my-5 mt-10">
-					As the old adage goes, `&quot;Measure twice, cut once,&ldquo; we understand the
-					importance of precision and accuracy in our work. Therefore, our
-					services are divided into two distinct categories: web development and
-					software development.
+					As the old adage goes, `&quot;Measure twice, cut once,&ldquo; we
+					understand the importance of precision and accuracy in our work.
+					Therefore, our services are divided into two distinct categories: web
+					development and software development.
 				</p>
 
 				<div>
@@ -39,14 +39,17 @@ const StrategicServices = () => {
 									<ul>
 										<li className="text-secondary font-bold text-base lg:text-xl ">
 											{" "}
-											<Link href={"/contacts"} className="flex items-center gap-1">
-												<BsArrowRight /> <span>Let&lsquo;s talk</span>
+											<Link
+												href={"/service/software-development"}
+												className="flex items-center gap-1"
+											>
+												<BsArrowRight /> <span>Know more</span>
 											</Link>
 										</li>
 										<li className="text-secondary font-bold text-base lg:text-xl ">
 											{" "}
 											<Link href={"/why"} className="flex items-center gap-1">
-												<BsArrowRight /> <span>Why we are</span>
+												<BsArrowRight /> <span>Why We Are</span>
 											</Link>
 										</li>
 									</ul>
@@ -80,16 +83,13 @@ const StrategicServices = () => {
 									<ul>
 										<li className="text-secondary font-bold text-base lg:text-xl ">
 											{" "}
-											<Link href={"/services"} className="flex items-center gap-1">
+											<Link
+												href={"/service/web-development"}
+												className="flex items-center gap-1"
+											>
 												<BsArrowRight /> <span>Know more</span>
 											</Link>
 										</li>
-										{/* <li className="text-secondary font-bold text-base lg:text-xl ">
-											{" "}
-											<Link href={"/"} className="flex items-center gap-1">
-												<BsArrowRight /> <span>Project rescue</span>
-											</Link>
-										</li> */}
 									</ul>
 								</div>
 							</div>
@@ -118,16 +118,17 @@ const StrategicServices = () => {
 									your customers.
 								</p>
 
-
-                                <div className="ml-5 my-3 border-l-2 border-green-500 pl-3">
+								<div className="ml-5 my-3 border-l-2 border-green-500 pl-3">
 									<ul>
 										<li className="text-secondary font-bold text-base lg:text-xl ">
 											{" "}
-											<Link href={"/services"} className="flex items-center gap-1">
+											<Link
+												href={"/service/branding"}
+												className="flex items-center gap-1"
+											>
 												<BsArrowRight /> <span>Read more</span>
 											</Link>
 										</li>
-										
 									</ul>
 								</div>
 							</div>
@@ -158,15 +159,17 @@ const StrategicServices = () => {
 									cutting-edge methodologies and technologies to extract
 									valuable insights from complex datasets.
 								</p>
-                                <div className="ml-5 my-3 border-l-2 border-green-500 pl-3">
+								<div className="ml-5 my-3 border-l-2 border-green-500 pl-3">
 									<ul>
 										<li className="text-secondary font-bold text-base lg:text-xl ">
 											{" "}
-											<Link href={"/services"} className="flex items-center gap-1">
+											<Link
+												href={"/service/research"}
+												className="flex items-center gap-1"
+											>
 												<BsArrowRight /> <span>Know more</span>
 											</Link>
 										</li>
-										
 									</ul>
 								</div>
 							</div>
@@ -194,15 +197,17 @@ const StrategicServices = () => {
 									campaigns that drive traffic, generate leads, and increase
 									conversions.
 								</p>
-                                <div className="ml-5 my-3 border-l-2 border-green-500 pl-3">
+								<div className="ml-5 my-3 border-l-2 border-green-500 pl-3">
 									<ul>
 										<li className="text-secondary font-bold text-base lg:text-xl ">
 											{" "}
-											<Link href={"/services"} className="flex items-center gap-1">
+											<Link
+												href={"/service/marketing"}
+												className="flex items-center gap-1"
+											>
 												<BsArrowRight /> <span>Read more</span>
 											</Link>
 										</li>
-										
 									</ul>
 								</div>
 							</div>
