@@ -33,16 +33,16 @@ const MemberDetails = () => {
 
 					<div className="flex flex-col items-start gap-3 mt-5">
 						<h3 className="text-start">
-							<span className="font-bold">Name:</span>
+							<span className="font-bold"> Name: </span>
 							{sinMember?.memberName}
 						</h3>
 						<p>
-							<span className="font-bold">Designation: </span>
+							<span className="font-bold"> Designation: </span>
 							{sinMember?.memberDesi}
 						</p>
 
 						<div className="text-start">
-							<h3 className="font-bold">Description:</h3>
+							<h3 className="font-bold"> Description: </h3>
 							<div
 								className="text-labelclr"
 								dangerouslySetInnerHTML={{ __html: sinMember?.memberDesc }}

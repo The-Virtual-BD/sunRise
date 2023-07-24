@@ -53,11 +53,9 @@ const WorksProjects = () => {
 
 	return (
 		<div className="bg-[#F8FAFB] py-10">
-			<div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-5 place-items-center  ">
+			<div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-5 place-items-center px-5 lg:px-0 ">
 				{work?.map((work) => (
-					<div key={work._id}>
-						<ProjectCard project={work} />
-					</div>
+					<ProjectCard key={work._id} project={work} />
 				))}
 			</div>
 		</div>

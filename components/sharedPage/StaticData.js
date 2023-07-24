@@ -10,7 +10,7 @@ export const bannerSlideData = [
 		subTitle: "",
 		desc: "At the intersection of passion and precision, SunRise is a software development company headquartered in The Bahamas that offers software engineering and IT consulting services to deliver practical and enduring value.",
 		btnText: "Get Started",
-		Link: "/contacts",
+		link: "/contacts",
 		img: "/images/banner/img-slider-01.png",
 	},
 	{
@@ -19,7 +19,7 @@ export const bannerSlideData = [
 		subTitle: "High performance engineering, redefined",
 		desc: "We differ from other software development companies by the deep technical expertise of our staff. Our dedicated software engineering teams work on complex systems at scale.",
 		btnText: "Our Services",
-		Link: "/services",
+		link: "/services",
 		img: "/images/banner/img-slider-02.png",
 	},
 	{
@@ -28,7 +28,7 @@ export const bannerSlideData = [
 		subTitle: "IT advisory services from strategy to implementation",
 		desc: "Unlike other software development companies, we combine software development with an IT consultancy under one roof. Partnering with our clients to deliver meaningful impact from our offices in The Bahamas & Bangladesh.",
 		btnText: "Know More",
-		Link: "/about-us",
+		link: "/about-us",
 		img: "/images/banner/img-slider-03.png",
 	},
 	{
@@ -37,7 +37,7 @@ export const bannerSlideData = [
 		subTitle: "Build software 8x faster with our up-to-date technologies",
 		desc: "Based in The Bahamas, we're a software company that values efficient application development. That's why we created a no-code application development platform to rapidly craft powerful digital experiences.",
 		btnText: "Our works",
-		Link: "/products",
+		link: "/products",
 		img: "/images/banner/img-slider-04.png",
 	},
 ];

@@ -28,7 +28,7 @@ const ProductDetails = () => {
 						<img
 							src={`${baseURL}/${sinWork.proImg}`}
 							alt={sinWork?.proName}
-							className="w-full"
+							className="w-full max-h-[500px]"
 						/>
 					</div>
 

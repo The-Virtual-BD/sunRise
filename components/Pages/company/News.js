@@ -106,6 +106,8 @@ const RecentBlog = ({ sortNews }) => {
 
 const LatestNews = ({ sortNews }) => {
 	const router = useRouter();
+	const prevNews=sortNews?.filter((newd)=> (newd._id !== sortNews[0]._id));
+	console.log(prevNews)
 
 	const handleNewsPage = (id) => {
 		router.push(`latest-news/${id}`);
@@ -117,7 +119,7 @@ const LatestNews = ({ sortNews }) => {
 				<h2 className="font-bold tracking-wide text-xl">PREVIOUS POST</h2>
 
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-5  px-5 lg:px-0 place-items-center mt-3">
-					{sortNews.map((blog) => (
+					{prevNews.map((blog) => (
 						<div
 							key={blog._id}
 							onClick={() => handleNewsPage(blog._id)}

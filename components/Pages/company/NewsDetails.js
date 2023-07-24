@@ -34,11 +34,11 @@ const NewsDetails = () => {
 						src={`${baseURL}/${sinNews?.newsImg}`}
 						alt={sinNews?.newsTitle}
 						srcSet=""
-						className="h-full max-h-[600px] w-full"
+						className="h-full max-h-[600px] w-full rounded-md"
 					/>
 				</div>
 
-				<div className="mt-5">
+				<div className="mt-3">
 					<span className="bg-[#F0F3F6] text-darkBg text-lg rounded-full py-1.5 px-5 ">
 						{sinNews?.newsCategory}
 					</span>

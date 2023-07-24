@@ -24,7 +24,7 @@
 }
 
 .snip1577 img {
-    min-width: 280px;
+    width: 100%;
     height: 250px;
     backface-visibility: hidden;
     vertical-align: top;

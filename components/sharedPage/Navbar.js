@@ -82,9 +82,9 @@ const Navbar = () => {
 									{item.subMenuItems ? (
 										<details open={isActive(item.path)}>
 											<summary
-												className={`${
+												className={`cursor-pointer font-semibold ${
 													isActive(item.path)
-														? "active text-primary"
+														? "active text-primary "
 														: "text-darkBg"
 												}`}
 											>
@@ -92,7 +92,7 @@ const Navbar = () => {
 											</summary>
 											<ul className="absolute  bg-darkBg text-darkBg rounded-md px-2 ">
 												{item.subMenuItems.map((subItem, subIndex) => (
-													<li key={subIndex}>
+													<li key={subIndex} open={isActive(subItem.path)}>
 														<Link href={subItem.path}>{subItem.name}</Link>
 													</li>
 												))}

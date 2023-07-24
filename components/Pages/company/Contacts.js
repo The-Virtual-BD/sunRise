@@ -45,22 +45,22 @@ const ContactBanner = () => {
 										<p className="text-sm lg:text-base flex items-center gap-1 mt-2">
 											<FaLocationArrow className="text-xl" />
 											<span>
-												#81 School Lane and Dowdeswell Street Nassau, The
+												 #81 School Lane and Dowdeswell Street Nassau, The
 												Bahamas
 											</span>
 										</p>
 										<p className="text-sm lg:text-base flex items-center gap-1 my-1">
 											<AiFillPhone className="text-xl" />
-											<span>1-242-698-1565 </span>
+											<span> 1-242-698-1565 </span>
 										</p>
 
 										<p className="text-sm lg:text-base flex items-center gap-1 my-1">
 											<BiMobile className="text-xl" />
-											<span>1-242-808-1561</span>
+											<span> 1-242-808-1561 </span>
 										</p>
 										<p className="text-sm lg:text-base flex items-center gap-1">
 											<BsFillEnvelopeFill className="text-xl" />
-											<span>customercare@sunrise-bahamas.net</span>
+											<span> customercare@sunrise-bahamas.net</span>
 										</p>
 									</div>
 								</div>
@@ -102,19 +102,19 @@ const ContactLocation = () => {
 								<p className="text-sm lg:text-base flex items-center gap-1 mt-2">
 									<FaLocationArrow className="text-xl" />
 									<span>
-										Home 315, Road 3, Phase 2, Sonadanga R/A, Khulna 9100,
-										Bangladesh.
+										  Home 315, Road 3, Phase 2, Sonadanga R/A, Khulna 9100,
+										Bangladesh. 
 									</span>
 								</p>
 
 								<p className="text-sm lg:text-base flex items-center gap-1 my-1">
 									<AiFillPhone className="text-xl" />
-									<span>+880 1902-624501</span>
+									<span> +880 1902-624501 </span>
 								</p>
 
 								<p className="text-sm lg:text-base flex items-center gap-1">
 									<BsFillEnvelopeFill className="text-xl" />
-									<span>contact@thevirtualbd.com</span>
+									<span> contact@thevirtualbd.com </span>
 								</p>
 							</div>
 						</div>

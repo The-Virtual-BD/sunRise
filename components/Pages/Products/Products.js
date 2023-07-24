@@ -28,7 +28,7 @@ const ProductBanner = () => {
 					<div className="flex items-center justify-start ">
 						<h1 className="why-header-design">Our Products</h1>
 					</div>
-					
+
 					<h3 className="text-lg lg:text-2xl font-semibold max-w-5xl pt-2 pb-5">
 						Areas of impact from our history of software development
 					</h3>
@@ -38,33 +38,28 @@ const ProductBanner = () => {
 	);
 };
 
-
-
 const WorksProjects = () => {
-	const {products,productsLoading}=useCollection();
+	const { products, productsLoading } = useCollection();
 
-    if(productsLoading){
-        return <p className="text-center text-lg">Loading...</p>
-    };
+	if (productsLoading) {
+		return <p className="text-center text-lg">Loading...</p>;
+	}
 
-	if(!productsLoading && products.length===0){
-		return <p  className="text-center text-lg">Empty Products</p>
-	};
+	if (!productsLoading && products.length === 0) {
+		return <p className="text-center text-lg">Empty Products</p>;
+	}
 
-    // console.log(products);
+	// console.log(products);
 	return (
 		<div className="bg-[#F8FAFB] py-10">
-			<div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-5 place-items-center  ">
+			<div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-5 place-items-center  px-5 lg:px-0">
 				{products?.map((work) => (
-					<div key={work._id}>
-						<ProjectCard project={work} />
-					</div>
+					<ProjectCard key={work._id} project={work} />
 				))}
 			</div>
 		</div>
 	);
 };
-
 
 const ProjectCard = ({ project }) => {
 	const [hover, setHover] = useState(false);
@@ -89,7 +84,11 @@ const ProjectCard = ({ project }) => {
 			onMouseLeave={handleMouseLeave}
 			onClick={() => handleSingleWork(project._id)}
 		>
-			<img src={`${baseURL}/${project?.proImg}`} alt={project?.proName} className="w-full" />
+			<img
+				src={`${baseURL}/${project?.proImg}`}
+				alt={project?.proName}
+				className="w-full"
+			/>
 			<figcaption>
 				<h3>{project?.proName}</h3>
 				<h4>{project?.proCategory}</h4>

@@ -30,7 +30,7 @@ const SingleWork = () => {
 						<img
 							src={`${baseURL}/${sinWork.workImg}`}
 							alt={sinWork?.workName}
-							className="w-full"
+							className="w-full max-h-[500px]"
 						/>
 					</div>
 
