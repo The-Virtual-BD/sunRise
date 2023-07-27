@@ -52,17 +52,17 @@ const Blogs = () => {
 										<span className="bg-[#F0F3F6] text-darkBg rounded-full py-1.5 px-3 ">
 											{blog.newsCategory}
 										</span>
-										<h2 className="text-xl lg:text-2xl font-bold text-darkBg hover:text-secondary cursor-pointer my-2 ">
+										<h2 className="text-lg lg:text-xl font-bold text-darkBg hover:text-secondary cursor-pointer my-2 mt-4 ">
 											{blog.newsTitle}
 										</h2>
 
-										<div
+										{/* <div
 											className="text-labelclr text-sm lg:text-base"
 											dangerouslySetInnerHTML={{
 												__html: blog?.newsDesc.slice(0,156),
 											}}
 											
-										/>
+										/> */}
 									</div>
 								</div>
 							))
