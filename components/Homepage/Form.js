@@ -58,13 +58,13 @@ const Form = () => {
 					<textarea
 						onChange={(e) => setMsg(e.target.value)}
 						className="textarea textarea-accent w-full h-40 border-0 mb-4 bg-formclr"
-						placeholder="Project description*"
+						placeholder="Project description*" required
 					></textarea>
 
 					<input
 						type="text"
 						onChange={(e) => setName(e.target.value)}
-						placeholder="Name*"
+						placeholder="Name*" required
 						className="input  input-accent w-full mb-4 border-0 bg-formclr"
 					/>
 
@@ -72,7 +72,7 @@ const Form = () => {
 						<input
 							type="email"
 							onChange={(e) => setEmail(e.target.value)}
-							placeholder="Email*"
+							placeholder="Email*" required
 							className="input  input-accent w-full border-0 bg-formclr"
 						/>
 
