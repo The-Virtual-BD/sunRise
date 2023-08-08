@@ -123,7 +123,7 @@ const LatestNews = ({ sortNews }) => {
 						<div
 							key={blog._id}
 							onClick={() => handleNewsPage(blog._id)}
-							className="bg-white rounded-md shadow-sm hover:shadow-xl h-[500px] cursor-pointer"
+							className="bg-white rounded-md shadow-sm hover:shadow-xl h-[500px] cursor-pointer overflow-hidden"
 						>
 							<img
 								src={`${baseURL}/${blog.newsImg}`}
@@ -135,13 +135,13 @@ const LatestNews = ({ sortNews }) => {
 									{blog.newsCategory}
 								</span>
 								<h2 className="text-xl lg:text-2xl font-bold text-darkBg  mb-2 mt-1 ">
-									{blog.newsTitle}
+									{blog.newsTitle.slice(0,60)}
 								</h2>
 
 								<div
 									className="text-labelclr text-sm lg:text-base"
 									dangerouslySetInnerHTML={{
-										__html: blog?.newsDesc.slice(0, 150),
+										__html: blog?.newsDesc.slice(0, 100),
 									}}
 								/>
 							</div>

@@ -26,7 +26,7 @@ const NewsDetails = () => {
 			<div className="max-w-7xl mx-auto py-20  text-darkBg px-5 lg:px-0">
 				<div>
 					<p className="text-base lg:text-lg pb-5">
-						Posted date: {moment(sinNews?.createdAt).format("MMM D, YYYY")}{" "}
+						Posted on {moment(sinNews?.createdAt).format("MMM D, YYYY")}{" "}
 					</p>
 				</div>
 				<div>
@@ -39,13 +39,14 @@ const NewsDetails = () => {
 				</div>
 
 				<div className="mt-3">
-					<span className="bg-[#F0F3F6] text-darkBg text-lg rounded-full py-1.5 px-5 ">
+				<span className="bg-[#F0F3F6] text-darkBg text-lg rounded-full py-1.5 px-5 ">
 						{sinNews?.newsCategory}
 					</span>
-
-					<h3 className="text-2xl font-semibold mt-2 mb-1.5 text-darkBg ">
+					<h3 className="text-2xl font-semibold mt-2 mb-1.5  text-darkBg ">
 						{sinNews?.newsTitle}
 					</h3>
+					
+
 					<div
 						className="text-labelclr mt-4"
 						dangerouslySetInnerHTML={{ __html: sinNews?.newsDesc }}
