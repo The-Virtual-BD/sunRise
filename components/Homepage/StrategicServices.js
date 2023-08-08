@@ -1,8 +1,11 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
 const StrategicServices = () => {
+	const router = useRouter();
+	const isActive = (path) => router.pathname === path;
 	return (
 		<div className="text-paraclr py-20 px-5 bg-[#F8FAFB]">
 			<div className="max-w-7xl mx-auto">
@@ -219,13 +222,15 @@ const StrategicServices = () => {
 					</div>
 				</div>
 
-				<div className="flex items-center justify-center">
-					<button className="bg-green-500 hover:bg-green-700 rounded-sm text-white px-6 lg:px-10 py-1.5 lg:py-3 text-bold text-lg lg:text-2xl mt-10">
-						<Link href={"/services"} className="flex items-center gap-1">
-							<span>All services</span> <BsArrowRight />
-						</Link>
-					</button>
-				</div>
+				{router.pathname !== "/services" && (
+					<div className="flex items-center justify-center">
+						<button className="bg-green-500 hover:bg-green-700 rounded-sm text-white px-6 lg:px-10 py-1.5 lg:py-3 text-bold text-lg lg:text-2xl mt-10">
+							<Link href={"/services"} className="flex items-center gap-1">
+								<span>All services</span> <BsArrowRight />
+							</Link>
+						</button>
+					</div>
+				)}
 			</div>
 		</div>
 	);

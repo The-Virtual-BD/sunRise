@@ -35,7 +35,7 @@ const Blogs = () => {
 					</h2>
 				</div>
 				<div className="blog-content py-14">
-					<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 max-w-7xl mx-auto px-5">
+					<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 max-w-7xl mx-auto px-5 lg:px-0">
 						{sortNews
 							.map((blog) => (
 								<div
